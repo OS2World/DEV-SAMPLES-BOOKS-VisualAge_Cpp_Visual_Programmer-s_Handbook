@@ -1,0 +1,15 @@
+
+
+// Feature source code generation begins here...
+public:
+  virtual int counter() const;
+  virtual GenerateObjectChangedEvent& setCounter(int aCounter);
+  virtual int sampleNow();
+  virtual int objectChanged();
+
+  static INotificationId counterId;
+  static INotificationId objectChangedEventId;
+
+private:
+  int iCounter;
+// Feature source code generation ends here.

@@ -1,0 +1,122 @@
+
+
+// Feature source code generation begins here...
+INotificationId FlatFile::fileNameId = "FlatFile::fileName";
+INotificationId FlatFile::currentLineId = "FlatFile::currentLine";
+INotificationId FlatFile::endOfFileId = "FlatFile::endOfFile";
+INotificationId FlatFile::openedId = "FlatFile::opened";
+
+IString FlatFile::fileName() const
+{
+  return iFileName;
+}
+
+FlatFile& FlatFile::setFileName(const IString& aFileName)
+{
+  if (!(iFileName == aFileName))
+  {
+    iFileName = aFileName;
+    notifyObservers(INotificationEvent(FlatFile::fileNameId, *this));
+  } // endif
+  return *this;
+}
+
+IString FlatFile::currentLine() const
+{
+  return iCurrentLine;
+}
+
+FlatFile& FlatFile::setCurrentLine(const IString& aCurrentLine)
+{
+  if (!(iCurrentLine == aCurrentLine))
+  {
+    iCurrentLine = aCurrentLine;
+    notifyObservers(INotificationEvent(FlatFile::currentLineId, *this));
+  } // endif
+  return *this;
+}
+
+FlatFile& FlatFile::close()
+{
+  if( aFileIsOpen )
+  {
+     aFile.close();
+     aFileIsOpen = false;
+     iFileName = "";
+  } /* endif */
+
+  return *this;
+}
+
+FlatFile& FlatFile::open(IString newFileName)
+{
+  if( aFileIsOpen )
+  {
+     close();
+  } /* endif */
+
+  IString fileNameToOpen = newFileName;
+  if( fileNameToOpen.length() == 0 )
+  {
+     fileNameToOpen = fileName();
+     if( fileNameToOpen.length() == 0 )
+     {
+        IAccessError exc = IAccessError( "Need a filename to open" );
+        ITHROW( exc );
+     }
+  } /* endif */
+  aFile.open( fileNameToOpen, ios::in | ios::app );
+  if( aFile.fail() == 0 )
+  {
+     eofReached = false;
+     aFileIsOpen = true;
+     setFileName( fileNameToOpen );
+     aFile.seekg( 0, ios::beg );
+     notifyObservers(INotificationEvent(FlatFile::openedId, *this));
+  } /* endif */
+  else
+  {
+     IAccessError exc = IAccessError( "Could not open file: " + fileNameToOpen);
+     ITHROW( exc );
+  }
+  return *this;
+}
+
+FlatFile& FlatFile::readFile()
+{
+  while( eofReached == false )
+  {
+     readLine();
+  } /* endwhile */
+
+  return *this;
+}
+
+FlatFile& FlatFile::readLine()
+{
+  IString strNewLine = IString::lineFrom( aFile );
+  if( aFile.fail() )
+  {
+     eofReached = true;
+     notifyObservers(INotificationEvent(FlatFile::endOfFileId, *this));
+  } /* endif */
+  else
+  {
+     setCurrentLine( strNewLine );
+  }
+
+  return *this;
+
+}
+
+FlatFile& FlatFile::writeLine(IString aLine)
+{
+  long mark = aFile.tellg();
+  aLine = aLine + "\n";
+  aFile << aLine;
+  aFile.seekg( mark );
+
+  return *this;
+}
+
+// Feature source code generation ends here.

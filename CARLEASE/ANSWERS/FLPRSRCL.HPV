@@ -1,0 +1,17 @@
+
+
+// Feature source code generation begins here...
+public:
+  virtual IString LeaseStartDateAsString() const;
+  virtual FileParserCalc& setLeaseStartDateAsString(const IString& aLeaseStartDateAsString);
+  virtual IString amountOwed() const;
+  virtual FileParserCalc& setAmountOwed(const IString& aAmountOwed);
+
+  static INotificationId LeaseStartDateAsStringId;
+  static INotificationId amountOwedId;
+
+private:
+  IString iLeaseStartDateAsString;
+  IString iAmountOwed;
+// Feature source code generation ends here.
+

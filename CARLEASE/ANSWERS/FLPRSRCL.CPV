@@ -1,0 +1,39 @@
+
+
+// Feature source code generation begins here...
+INotificationId FileParserCalc::LeaseStartDateAsStringId = "FileParserCalc::leaseStartDateAsString";
+INotificationId FileParserCalc::amountOwedId = "FileParserCalc::amountOwed";
+
+IString FileParserCalc::LeaseStartDateAsString() const
+{
+  return iLeaseStartDateAsString;
+}
+
+FileParserCalc& FileParserCalc::setLeaseStartDateAsString(const IString& aLeaseStartDateAsString)
+{
+  if (!(iLeaseStartDateAsString == aLeaseStartDateAsString))
+  {
+    iLeaseStartDateAsString = aLeaseStartDateAsString;
+    notifyObservers(INotificationEvent(FileParserCalc::LeaseStartDateAsStringId, *this));
+  } // endif
+  return *this;
+}
+
+IString FileParserCalc::amountOwed() const
+{
+  return iAmountOwed;
+}
+
+FileParserCalc& FileParserCalc::setAmountOwed(const IString& aAmountOwed)
+{
+  if (!(iAmountOwed == aAmountOwed))
+  {
+    iAmountOwed = aAmountOwed;
+    notifyObservers(INotificationEvent(FileParserCalc::amountOwedId, *this));
+  } // endif
+  return *this;
+}
+
+// Feature source code generation ends here.
+
+

@@ -1,0 +1,75 @@
+
+
+// Feature source code generation begins here...
+INotificationId PhoneParser::areaCodeId = "PhoneParser::areaCode";
+INotificationId PhoneParser::prefixId = "PhoneParser::prefix";
+INotificationId PhoneParser::numberId = "PhoneParser::number";
+INotificationId PhoneParser::phoneAsStringId = "PhoneParser::phoneAsString";
+
+IString PhoneParser::areaCode() const
+{
+  return iAreaCode;
+}
+
+PhoneParser& PhoneParser::setAreaCode(const IString& aAreaCode)
+{
+  if (!(iAreaCode == aAreaCode))
+  {
+    iAreaCode = aAreaCode;
+    notifyObservers(INotificationEvent(PhoneParser::areaCodeId, *this));
+  } // endif
+  return *this;
+}
+
+IString PhoneParser::prefix() const
+{
+  return iPrefix;
+}
+
+PhoneParser& PhoneParser::setPrefix(const IString& aPrefix)
+{
+  if (!(iPrefix == aPrefix))
+  {
+    iPrefix = aPrefix;
+    notifyObservers(INotificationEvent(PhoneParser::prefixId, *this));
+  } // endif
+  return *this;
+}
+
+IString PhoneParser::number() const
+{
+  return iNumber;
+}
+
+PhoneParser& PhoneParser::setNumber(const IString& aNumber)
+{
+  if (!(iNumber == aNumber))
+  {
+    iNumber = aNumber;
+    notifyObservers(INotificationEvent(PhoneParser::numberId, *this));
+  } // endif
+  return *this;
+}
+
+IString PhoneParser::phoneAsString() const
+{
+  IString phoneNumber = "(" + iAreaCode + ")" + iPrefix + "-" + iNumber;
+  return phoneNumber;
+}
+
+PhoneParser& PhoneParser::setPhoneAsString(const IString& aPhoneAsString)
+{
+  if (!(iPhoneAsString == aPhoneAsString))
+  {
+    IString areaCode, prefix, number;
+    aPhoneAsString >> '(' >> areaCode >> ')' >> prefix >> '-' >> number;
+    setAreaCode( areaCode );
+    setPrefix( prefix );
+    setNumber( number );
+    notifyObservers(INotificationEvent(PhoneParser::phoneAsStringId, *this));
+  } // endif
+  return *this;
+}
+
+// Feature source code generation ends here.
+

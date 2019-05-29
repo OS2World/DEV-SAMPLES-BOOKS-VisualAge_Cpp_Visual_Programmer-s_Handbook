@@ -1,0 +1,56 @@
+// Feature source code generation begins here...
+
+IFrameWindow* WindowSaver::theFrameWindow() const
+{
+  return iTheFrameWindow;
+}
+
+WindowSaver& WindowSaver::setTheFrameWindow(IFrameWindow* aTheFrameWindow)
+{
+  if (!(iTheFrameWindow == aTheFrameWindow))
+  {
+    iTheFrameWindow = aTheFrameWindow;
+  } // endif
+  return *this;
+}
+
+WindowSaver& WindowSaver::saveWindowParms()
+{
+  iProfile.addOrReplaceElementWithKey( "WIDTH", iTheFrameWindow->size().width()  );
+  iProfile.addOrReplaceElementWithKey( "HEIGHT",iTheFrameWindow->size().height() );
+  iProfile.addOrReplaceElementWithKey( "XPOS",  iTheFrameWindow->position().x()  );
+  iProfile.addOrReplaceElementWithKey( "YPOS",  iTheFrameWindow->position().y()  );
+  return *this;
+}
+
+WindowSaver& WindowSaver::getWindowParms()
+{
+  iTheFrameWindow->sizeTo( ISize( iProfile.integerWithKey( "WIDTH" )
+                                , iProfile.integerWithKey( "HEIGHT") ));
+
+  iTheFrameWindow->moveTo( IPoint( iProfile.integerWithKey( "XPOS"  )
+                                 , iProfile.integerWithKey( "YPOS"  )  ));
+
+  return *this;
+}
+
+// Feature source code generation ends here.
+
+
+WindowSaver& WindowSaver::setupProfile ()
+{
+   IString appName = IApplication::current().argv( 0 );
+    
+   char path_buffer[_MAX_PATH];
+   char drive[_MAX_DRIVE];                                  
+   char dir[_MAX_DIR];
+   char fname[_MAX_FNAME];
+   char ext[_MAX_EXT];
+
+   strcpy( path_buffer, appName );
+
+   _splitpath(path_buffer, drive, dir, fname, ext);
+
+   iProfile.setDefaultApplicationName( fname );
+   return *this;
+}

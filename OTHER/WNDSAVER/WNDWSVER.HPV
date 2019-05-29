@@ -1,0 +1,13 @@
+// Feature source code generation begins here...
+public:
+  virtual IFrameWindow* theFrameWindow() const;
+  virtual WindowSaver& setTheFrameWindow(IFrameWindow* aTheFrameWindow);
+  virtual WindowSaver& saveWindowParms();
+  virtual WindowSaver& getWindowParms();
+
+
+private:
+  virtual WindowSaver& setupProfile();
+  IProfile iProfile;
+  IFrameWindow* iTheFrameWindow;
+// Feature source code generation ends here.

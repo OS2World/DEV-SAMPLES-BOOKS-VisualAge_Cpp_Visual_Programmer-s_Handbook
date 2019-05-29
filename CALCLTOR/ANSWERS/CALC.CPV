@@ -1,0 +1,90 @@
+
+
+// Feature source code generation begins here...
+INotificationId Calc::num1Id = "Calc::num1";
+INotificationId Calc::num2Id = "Calc::num2";
+INotificationId Calc::resultId = "Calc::result";
+
+double Calc::num1() const
+{
+  return iNum1;
+}
+
+Calc& Calc::setNum1(double aNum1)
+{
+  if (!(iNum1 == aNum1))
+  {
+    iNum1 = aNum1;
+    notifyObservers(INotificationEvent(Calc::num1Id, *this));
+  } // endif
+  return *this;
+}
+
+double Calc::num2() const
+{
+  return iNum2;
+}
+
+Calc& Calc::setNum2(double aNum2)
+{
+  if (!(iNum2 == aNum2))
+  {
+    iNum2 = aNum2;
+    notifyObservers(INotificationEvent(Calc::num2Id, *this));
+  } // endif
+  return *this;
+}
+
+double Calc::result() const
+{
+  return iResult;
+}
+
+Calc& Calc::setResult(double aResult)
+{
+  if (!(iResult == aResult))
+  {
+    iResult = aResult;
+    notifyObservers(INotificationEvent(Calc::resultId, *this));
+  } // endif
+  return *this;
+}
+
+Calc& Calc::add()
+{
+  setResult( iNum1 + iNum2 );
+  return *this;
+}
+
+// Feature source code generation ends here.
+
+
+// Feature source code generation begins here...
+
+Calc& Calc::subtract()
+{
+  setResult( iNum1 - iNum2 );
+  return *this;
+}
+
+Calc& Calc::multiply()
+{
+  setResult( iNum1 * iNum2 );
+  return *this;
+}
+
+Calc& Calc::divide()
+{
+  // chkec to see if the second number is zero
+  if( iNum2 == 0 )
+  {
+     IInvalidParameter exception = IInvalidParameter( "Divide by zero not allowed" );
+     ITHROW( exception );
+  } /* endif */
+
+  setResult( iNum1 / iNum2 );
+
+  return *this;
+}
+
+// Feature source code generation ends here.

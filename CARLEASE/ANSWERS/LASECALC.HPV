@@ -1,0 +1,39 @@
+
+
+// Feature source code generation begins here...
+public:
+  virtual IColor differenceColor() const;
+  virtual LeaseCalc& setDifferenceColor(const IColor& aDifferenceColor);
+  virtual int difference() const;
+  virtual IDate leaseStartDate() const;
+  virtual LeaseCalc& setLeaseStartDate(const IDate& aLeaseStartDate);
+  virtual IDate today() const;
+  virtual LeaseCalc& setToday(const IDate& aToday);
+  virtual int extraCost() const;
+  virtual LeaseCalc& setExtraCost(int aExtraCost);
+  virtual int freeDistancePerYear() const;
+  virtual LeaseCalc& setFreeDistancePerYear(int aFreeDistancePerYear);
+  virtual int freeDistanceToDate() const;
+  virtual int odometerReading() const;
+  virtual LeaseCalc& setOdometerReading(int aOdometerReading);
+  virtual IString calculateAmountOwing();
+
+  static INotificationId differenceColorId;
+  static INotificationId differenceId;
+  static INotificationId leaseStartDateId;
+  static INotificationId todayId;
+  static INotificationId extraCostId;
+  static INotificationId freeDistancePerYearId;
+  static INotificationId freeDistanceToDateId;
+  static INotificationId odometerReadingId;
+
+private:
+  IColor iDifferenceColor;
+  int iDifference;
+  IDate iLeaseStartDate;
+  IDate iToday;
+  int iExtraCost;
+  int iFreeDistancePerYear;
+  int iFreeDistanceToDate;
+  int iOdometerReading;
+// Feature source code generation ends here.

@@ -1,0 +1,25 @@
+// Feature source code generation begins here...
+public:
+  virtual IFrameWindow* theFrameWindow() const;
+  virtual WindowSaver& setTheFrameWindow(IFrameWindow* aTheFrameWindow);
+  virtual WindowSaver& saveWindowParms();
+  virtual WindowSaver& getWindowParms();
+  virtual IString applicationName() const;
+  virtual WindowSaver& setApplicationName(const IString& aApplicationName);
+  virtual IProfile* theProfile() const;
+  virtual WindowSaver& setTheProfile(IProfile* aTheProfile);
+
+  static INotificationId theProfileId;
+  static INotificationId applicationNameId;
+  static INotificationId profileNameId;
+
+
+private:
+  virtual WindowSaver& setupProfile();
+  IFrameWindow* iTheFrameWindow;
+  IString iApplicationName;
+  IProfile* iTheProfile;
+
+// Feature source code generation ends here.
+
+

@@ -1,0 +1,31 @@
+
+
+// Feature source code generation begins here...
+public:
+  virtual double num1() const;
+  virtual Calc& setNum1(double aNum1);
+  virtual double num2() const;
+  virtual Calc& setNum2(double aNum2);
+  virtual double result() const;
+  virtual Calc& setResult(double aResult);
+  Calc& add();
+
+  static INotificationId num1Id;
+  static INotificationId num2Id;
+  static INotificationId resultId;
+
+private:
+  double iNum1;
+  double iNum2;
+  double iResult;
+// Feature source code generation ends here.
+
+
+// Feature source code generation begins here...
+public:
+  Calc& subtract();
+  Calc& multiply();
+  Calc& divide();
+
+
+// Feature source code generation ends here.

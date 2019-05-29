@@ -1,0 +1,1847 @@
+ 
+               IBM OS/2 Employee Written Software Catalog
+ 
+        These programs are available on all sponsored IBM BBS's and
+        CompuServe. The file names are the filename.ZIP listed in
+        this catalog.
+ 
+  *********************************************************************
+  *                                                                   *
+  * NOTICE                                                            *
+  *                                                                   *
+  * You accept these programs with the understanding that             *
+  * the IBM Corporation makes no representations or warranties        *
+  * as to the suitability of these programs for your particular       *
+  * purpose, and that to the extent you use or implement this         *
+  * program in your own setting, you do so at your own risk. In       *
+  * no event will the IBM Corporation be liable for any damages,      *
+  * whether consequential, incidental, or special, arising out of     *
+  * the use of or inability to use the programs provided.             *
+  * Please read the LICENSE which follows to determine if you want    *
+  * to use these programs.                                            *
+  *                                                                   *
+  * Copyright the IBM Corporation, 1992, All rights reserved.         *
+  *                                                                   *
+  * DO NOT POST MODIFIED VERSIONS OF THESE PROGRAMS FOR PUBLIC ACCESS *
+  *********************************************************************
+ 
+ 
+                  IBM License Agreement for OS/2 Tools
+       -----------------------------------------------------------------
+ 
+ 
+       IF YOU DOWNLOAD OR USE THIS PROGRAM YOU AGREE TO THESE TERMS.
+ 
+       International Business Machines Corporation grants you a license
+       to use the Program only in the country where you acquired it. The
+       Program is copyrighted and licensed (not sold). We do not
+       transfer title to the Program to you. You obtain no rights other
+       than those granted you under this license.
+ 
+       Under this license, you may:
+ 
+       1. use the Program on one or more machines at a time;
+       2. make copies of the Program for use or backup purposes within
+          your Enterprise;
+       3. modify the Program and merge it into another program; and
+       4. make copies of the original file you downloaded and distribute
+          it, provided that you transfer a copy of this license to the
+          other party. The other party agrees to these terms by its
+          first use of the Program.
+ 
+       You must reproduce the copyright notice and any other legend of
+       ownership on each copy or partial copy, of the Program.
+ 
+       You may NOT:
+ 
+       1. sublicense, rent, lease, or assign the Program; and
+       2. reverse assemble, reverse compile, or otherwise translate the
+          Program.
+ 
+       We do not warrant that the Program is free from claims by a third
+       party of copyright, patent, trademark, trade secret, or any other
+       intellectual property infringement.
+ 
+       Under no circumstances are we liable for any of the following:
+ 
+       1. third-party claims against you for losses or damages;
+       2. loss of, or damage to, your records or data; or
+       3. economic consequential damages (including lost profits or
+          savings) or incidental damages, even if we are informed of
+          their possibility.
+ 
+       Some jurisdictions do not allow these limitations or exclusions,
+       so they may not apply to you.
+ 
+       We do not warrant uninterrupted or error free operation of the
+       Program. We have no obligation to provide service, defect
+       correction, or any maintenance for the Program. We have no
+       obligation to supply any Program updates or enhancements to you
+       even if such are or later become available.
+ 
+ 
+       IF YOU DOWNLOAD OR USE THIS PROGRAM YOU AGREE TO THESE TERMS.
+ 
+       THERE ARE NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING THE
+       IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+       PARTICULAR PURPOSE.
+ 
+       Some jurisdictions do not allow the exclusion of implied
+       warranties, so the above exclusion may not apply to you.
+ 
+       You may terminate this license at any time. We may terminate this
+       license if you fail to comply with any of its terms. In either
+       event, you must destroy all your copies of the Program.
+ 
+       You are responsible for the payment of any taxes resulting from
+       this license.
+ 
+       You may not sell, transfer, assign, or subcontract any of your
+       rights or obligations under this license. Any attempt to do so is
+       void.
+ 
+       Neither of us may bring a legal action more than two years after
+       the cause of action arose.
+ 
+       If you acquired the Program in the United States, this license is
+       governed by the laws of the State of New York. If you acquired
+       the Program in Canada, this license is governed by the laws of
+       the Province of Ontario. Otherwise, this license is governed by
+       the laws of the country in which you acquired the Program.
+ 
+       3/92
+
+---------------------------------------------------------------------------
+ 
+                          C A T A L O G
+ 
+Program  Vers  Rel Date Description
+ 
+ 
+EWSCAT*  1.82  96/04/02 IBM OS2EWS Catalog
+FMOS2*   1.10  96/04/02 File and Directory Manager for OS/2
+FV2*     1.09  96/04/02 FileView for OS/2
+STPOS2*  1.05  96/04/02 Subdirectory Tree Manager Plus
+ALPHAL   2.8   96/03/20 Code Browser and Analysis Tool
+DVORKB   1.1   96/03/20 Dvorak Keyboard Remapper for OS/2
+JUMPKEY  2.2.1 95/11/28 JumpKey/2: Allows hotkeys to jump to sessions, etc.
+20MEMU   1.4   95/11/16 OS/2 Memory Usage display tool
+WPSFWIN  1.51  95/10/20 Workplace Shell for Windows
+TSHELL   2.0   95/10/13 A non-GUI, Text Shell for OS/2
+STARTD   2.0   95/10/13 An OS/2 Program to Start VDM's Under OS/2
+LP3820   2.5a  95/09/07 Print AFP documents on a personal laser printer
+DIRSTA   1.05  95/09/07 Program to Display LAN info for attached LAN
+GOSERV   2.40  95/09/07 A Gopher/WWW server for OS/2
+BOOTOS2  7.00  95/09/07 Program to create various OS/2 Boot Diskettes
+QCONFG   2.22  95/06/08 Machine Configuration Report Utility
+FENX2    1.20  95/06/08 Phoenix file recovery utility
+CDEXPL   2.5   95/05/09 A Compact Disc Digital Audio Explorer
+OS2GFC   1.2   95/05/09 A Graphical File Comparison Program
+GFOLDR   2.3f  95/04/04 Group Folder create subsections within a folder
+EXCAL    3.0   95/04/04  PM Calender Program
+TVFS     2.08  95/03/22 Toronto Virtual File System
+TXT2PS   2.56  95/03/08 Program to enhance the use of PostScript printers
+UTLOS2   1.00  95/03/08 *ix-like and other utilities for OS/2
+PMCALC   1.00  95/03/02 OS/2 Presentation Manager Calculator
+LCKDRV   1.0   95/01/27 A DOS-Mode Drive Lock Utility for OS/2
+CHKSTO   2.12  94/12/08 Checks storage space on hard disk
+BINGO2   1.44  94/12/02 Bingo/2
+SHFTRN   1.60  94/11/18 Program to run an OS/2 2.0 program before IPL is done
+APMTST   2.9   94/11/16 PM Automation Tool
+GOPHER   1.9915 94/11/10 OS/2 PM client for the Internet Gopher protocol
+MCLIP    3.3   94/10/25 ManyClip provides multiple OS/2 PM text clipboard
+RINGUT   1.02  94/09/08 LAN Ring Utilization display utility
+LANXCO   1.00  94/09/08 XCOPY for LAN
+VPOKER   1.00  94/06/16 Video Poker for OS/2 2.1
+PROGRF   1.1   94/02/01 A utility to generate program reference objects from exe's
+ENVED    1.1   94/02/01  An environment variables editor
+ROBOSV   3.04  94/02/01  A Desktop backup and restore program
+700PRO   1.0   94/02/01  Thinkpad 700c/720c display control panel for OS/2 PM
+MSHELL   1.0   94/02/01 Mini PM Shell for OS/2
+TINYED   2.2   94/01/31 Tiny OS/2 and DOS editor
+EXEMAP   2.1.3 93/11/09 Maps OS/2 V2, V1, Windows and PC-DOS EXE Headers.
+CLPSRV   1.0   93/10/28 TCP/IP clipboard server for OS/2 2.x
+CLOKGS   1.32  93/10/28 A simple clock for your PM desktop
+TUNEUP   1.0   93/10/25 IBM LAN Server Ver 2.0 & 3.0 tuning utility
+RXFTP    1.00  93/10/25 Rexx Function Package for TCP/IP FTP for OS/2 2.0
+EPMPLX   2.2   93/08/17 EPM customized for writing PL/1 type code
+RXSOCK   1.3   93/08/16 Rexx Function Package for TCP/IP Sockets for OS/2 2.0
+CSTEPM   1.0   93/08/06 A customized version of EPM
+L40BAT   2.21  93/08/06 L40SX Battery indicator program
+L40TEM   2.21  93/08/06 L40SX Temperature indicator program
+COLRPT   1.01  93/08/06 A program that will report the Pixel colors
+EXDESK   1.0   93/08/06 A WPS DLL to extend functions of OS/2 Desktop object
+BN2SRC   1.0   93/08/05 Binary Data File to Source Translation Utility
+LTRNAM   1.0   93/08/05 Change "HOST-X-3270 Emulator" to any ASCII string
+MEGADS   1.0   93/08/05 Expands virtual desktop area, create "rooms"
+PMPRTF   2.56  93/06/17 Utility to handle PRINTF statements in your code
+PMGB32   2.18  93/06/17 PMGlobe - an OS/2 Presentation Manager World Globe
+%21MEMU  1.0A  93/01/12 OS/2 2.1 Beta Memory display tool (DELETED)
+ELEPHT   1.21  93/05/04 ELEPHANT a demo of OS/2 animations using icons
+LP382F   2.2d  93/04/12 LP382F - Fonts for use with lp3820 HP-PCL and 4019 PPDS modes
+APING    2.36  93/04/08 APPC Echo Test written in CPI-C
+AREXEC   2.36  93/04/08 APPC Remote Command Execution (written in CPI-C)
+ATELL    2.36  93/04/08 APPC Tell Program - send a message (written in CPI-C)
+CBOOK    1.00  93/04/08 C language file formatter for BookMaster
+ELEP2F   5.0   93/04/08 OS/2 Entry Level 3270 Emulation Program
+LOADDF   1.0   93/04/08 Utilities to save and load a diskette to and from a file
+PMFTRM   1.5   93/03/23 IBM Employee Written S/W, ASYNC Terminal Emulator
+CPOST    1.2   93/03/23 C language file formatter for PostScript
+AUTODI   0.30  93/03/23 A graphical display of APPN resources
+RXD      1.00  93/02/15 REXX Sourve Level Debug Utility
+PMCAM2   1.00  93/02/15 PM CAMERA/2, capture the screen with this utility
+RXMATH   1.00  92/12/02 Basic math functions to use with OS/2 2.0 REXX
+PRNTPS   1.00  92/11/10 REXX CMD file to print TEXT on a PS capable printer
+RXAPPC   1.00  92/11/09 REXX/APPC Function interface Package
+RXNETB   1.00  92/11/06 REXX/NETBIOS Function interface Package
+EDTINI   1.00  92/10/02 A text only INI file editor
+VREXX2   1.00  92/09/24 Visual REXX for OS/2 2.0 Presentation Manager
+HEXDMP   1.00  92/09/01 Program to Display or create programs in HEX
+DBMRPW   1.00  92/09/01 Program to allow REMOTE ADMINISTRATION of DB Passwords
+DINFO    1.30  92/08/21 Program to display Swapper Size and Free space
+PMTREE   1.0   92/08/18 Graphical display of/interaction with PM windows
+IPFCPP   1.0   92/07/18 IBM Employee Written S/W, IPFC Pre-Processor
+ 
+* = Updated with this release from last version...
+% = Withdrawn ...
+
+--------------------------------------------------------------------------
+FMOS2.ZIP                 Date Issued - April 2, 1996
+ 
+Author: Craig Raymond
+ 
+Version 1.10
+ 
+FMOS2 (FILEMAN) is a fullscreen/window OS/2 program for managing
+files/directories on one or more drives simultaneously.
+ 
+Functions:
+ 1. File display with
+    - cursored menubar operation (predecessor to CUA)
+    - active file/directory highlighting (movable directory cursor)
+ 2. Copy, Erase, Move, Attribute, Rename, and Subcopy menu functions.
+ 3. Sort, List, and Mark PF key functions.
+ 4. User definable PF and ALT keys.
+ 5. Commands/programs can be executed against marked/current file(s).
+ 6. Color and PF key customization via an ascii profile.  This can be done
+    either 'dynamically (at run time via an environment variable)' or
+    'permanently (by modifying the EXE)'.
+ 7. HPFS support.
+-------------------------------------------------------------------------
+FV2.ZIP                   Date Issued - April 2, 1996
+ 
+Author: Craig Raymond
+ 
+Version: 1.09
+ 
+FV2 (FileView for OS/2) is a small multi-threaded fullscreen/window OS2
+program for quickly viewing/browsing files.
+ 
+Functions:
+ 1. File display in
+    - ASCII format   ( default )
+    - HEX   format with ASCII  translation
+    - HEX   format with EBCDIC translation
+ 2. Search
+    - anycase, specific and hexadecimal
+    - First hit is found in primary thread
+    - All hits are found via secondary thread
+    - no new search can be started until secondary thread has finished
+    - based on least used character in string for improved performance
+ 3. Customization of colors via environment.
+ 4. HPFS support.
+--------------------------------------------------------------------------
+STPOS2.ZIP                Date Issued - April 2, 1996
+ 
+Author: Craig Raymond
+ 
+Version: 1.05
+ 
+STPOS2 (Subdirectory Tree manager Plus) is a fullscreen/window OS/2
+program for managing subdirectory trees.
+ 
+Functions:
+ 1. Tree display with
+    - cursored menubar operation (predecessor to CUA)
+    - current path highlighting
+    - active directory highlighting (movable directory cursor)
+ 2. Copy  and Move of directory trees on or across drives.
+ 3. Add, Rename, and Erase directory trees.
+ 4. User definable PF keys.
+ 5. Color and PF key customization via an ascii profile.  This can be done
+    either 'dynamically (at run time via an environment variable)' or
+    'permanently (by modifying the EXE)'.
+ 6. HPFS support.
+--------------------------------------------------------------------------
+ALPHAL.ZIP                Date Issued - August 4, 1992
+                          Latest Release - March 20, 1996
+ 
+Author: Lionel de Lambert, IBM United Kingdom Laboratories Ltd.
+ALPHA
+ 
+Version 2.8
+ 
+Alpha is a simple 32-bit multi-document configurable highliting and
+analysing editor for 370 and 386 assembler, PASCAL, C, PL/X, FORTRAN,
+and related languages.
+ 
+Features:
+  -  Provides basic browse/edit functions.
+   + Copy, cut and paste.
+   + Box mode {column mode} select as well as line mode.
+   + Special character insert for diagrams etc..
+   + Display characters at the current cursor position in Hex.
+  -  Invokes the appropriate compiler.
+  -  Cross-references labels.
+  -  Searches files in a directory for a string.
+  -  Displays the program call structure.
+  -  Highlights keywords.
+  -  Suppresses comments.
+  -  Expands the procedure call in a secondary window.
+  -  Search of compiler include paths.
+  -  Conversion to upper or lower case.
+  -  Clearing selected areas to blanks.
+  -  Tab expansion.
+  -  Customization for highlighting and language support.
+  -  Bookmark support.
+  -  Dis-assemble the code object in ".EXE" files.
+  -  Edit/analyse up to 256 files at a time.
+ 
+--------------------------------------------------------------------------
+DVORKB.ZIP                Date Issued - Dec. 27, 1995
+                          Latest Release - March 20, 1996
+ 
+Author:  Mark Zetts
+ 
+Version: 1.1
+ 
+DVORAKKB remaps the standard 101/102 keyboard (US layout) to a
+Dvorak layout.  The keyboard will be remapped in the PM screen
+group for PM, OS2, DOS and Seamless applications and for DOS and
+OS2 full screen applications.  Full screen Windows may be converted
+to Dvorak by loading the Windows Dvorak keyboard driver (procedure
+provided).
+ 
+--------------------------------------------------------------------------
+JUMPKEY.ZIP               Date Issued - Sept. 07, 1995
+                          Latest Release - Nov. 28, 1995
+ 
+Author: Thomas E. Link
+ 
+Version 2.2.1
+ 
+JumpKey/2 lets you use a keyboard to jump to and
+between OS/2 2.x and 3.x sessions. It also provides
+keyboard hotkeys to size windows, lockup and shutdown.
+ 
+---------------------------------------------------------------------------
+ 
+20MEMU.ZIP                Date Issued - January 08, 1993
+                          Latest Release - Nov. 16, 1994
+Author: Ross Cook         IBM Boca Raton FL.
+        Glenn Brew        IBM Boca Raton FL.
+ 
+OS20MEMU is an OS/2 protect-mode program which displays a "snapshot"
+of the current memory usage in an OS/2  system.
+Total free storage is also shown.
+ 
+The information given includes:
+ 
+        - Applications (by name)        - Amount in Use
+        - Total Vdisk size              - Virtual Machine size
+        - Total Disk Cache size         - Memory owned by application
+        - Shared memory                 - Free memory
+        - Amount Swapped
+ 
+In addition, extensive detail can be requested for each application
+currently executing by entering the process ID (PID).
+ 
+Command examples:
+                 OS20MEMU        - runs program in default mode
+                 OS20MEMU ?      - gives brief help and setup notes
+ 
+See the OS20MEMU.TXT file for Install instructions.
+ 
+Change History:
+ 
+93/1/7    Version 1.0:
+    - First general release.
+ 
+93/4/27   Version 1.01
+    - SYS3175 fixes
+ 
+93/6/16   Version 1.02
+    - Supports ALL released OS/2 2.X systems (not Beta's)
+ 
+94/12/08  Version 1.3
+    - Support for WARP.
+ 
+11/15/95 
+    - Updated for FixPak #10 usage.
+ 
+---------------------------------------------------------------------------
+WPSFWIN.ZIP               Date Issued - June 15, 1995
+                          Latest Issue - October 20, 1996
+ 
+ 
+Author: Mario De Armas
+ 
+Version 1.51
+ 
+This is a shell replacement program for Windows 3.1x and Win-OS/2 which
+provides users with a user interface similar to OS/2 Warp's Workplace Shell.
+ 
+The shell can start applications, switch between them, organize applications
+and documents in folders, organize folders on the desktop, move, copy and
+delete folders and documents, change color schemes of your folders and
+much more.
+ 
+Workplace Shell for Windows is modeled after the object-oriented Workplace
+Shell which is an integral part of the award-winning OS/2 Warp, designed
+by IBM. While it does not approach the real OS/2 Workplace Shell in the
+richness of its features, it can serve as an introduction to the real one
+for a user not familiar with the OS/2 as well as provide a consistent and
+familiar user interface for the OS/2 users who occasionally use Windows
+applications.
+ 
+-----------------------------------------------------------------------
+ 
+TSHELL.ZIP                    Date Issued - February 1, 1994
+                              Latest Issue - October 13, 1995
+ 
+Author: Monte Copeland           IBM, Boca Raton, Fl
+ 
+  TShell is a text, non-GUI shell for OS/2.  It does not initialize the
+   Presentation Manager; only OS/2 text, DOS and Windows sessions will
+   work.  Specify TSHELL.EXE on the PROTSHELL statement in CONFIG.SYS.
+   Optional:  use supplied PGMSHELL.EXE to program the TShell start list.
+ 
+-------------------------------------------------------------------
+ 
+STARTD.ZIP                    Date Issued - February, 1 1994
+                              Latest Issue - October, 1995
+ 
+Author: Monte Copeland            IBM, Boca Raton, Fl
+ 
+   StartDos is a utility to start DOS sessions programmatically.
+   Useful when running under reduced-functions shells like MShell or
+   TShell, or when spawning DOS programs from OS/2 batch files.
+   Uses REXX to specify DOS settings prior to session start.
+ 
+--------------------------------------------------------------------------
+DIRSTA.ZIP                Date Issued - August 27, 1992
+                          Latest Release - Sept. 07, 1995
+ 
+Version 1.05
+ 
+Author: Chris Ahl         IBM Raleigh, NC.
+ 
+DIRSTAT is a simple PM program that can be used to obtain information from
+a LAN adapter in your PS/2.  The primary purpose of this program is to
+provide an easy way of finding out the universal address (UAA) of the adapter
+and the local address (LAA) of the adapter.
+ 
+----------------------------------------------------------------------
+GOSERV.ZIP               Date Issued - May 13, 1993
+                         Latest Issue - Sept. 07, 1995
+ 
+Author: Mike Cowlishaw   IBM UK Laboratories
+ 
+Ver. 2.40
+ 
+'Gopher' is a client-server protocol designed for text location and
+retrieval.  It was designed at the University of Minnesota, and is
+widely used; both clients and servers exist for most significant
+operating systems.  The Gopher protocol is described in documents
+distributed by the University of Minnesota Microcomputer and Workstation
+Networks Center.
+ 
+'GoServe' is a Gopher server for OS/2, which may also be used as a
+simple World Wide Web (WWW) server, using the HyperText Transfer
+Protocol (HTTP).  The GoServe package includes documentation and samples
+for both Gopher and WWW servers.
+ 
+Goserve is a 32-bit OS/2 application.  It requires TCP/IP for OS/2 to be
+installed and operational (either on a real network or using the
+loopback driver).
+ 
+---------------------------------------------------------------------------
+BOOTOS2.ZIP               Date Issued - August 21,  1992
+                          Latest Release - Sept. 07, 1995
+ 
+Version 7.00
+ 
+Author: Kenneth Kahn      IBM Poughkeepsie, NY
+ 
+The BOOTOS2 program is a utility that allows you to build a BOOTable OS/2 V2
+or V3 system using an existing OS/2 V2 or V3 system.  The BOOT system can be
+installed on either Floppy Disks or a Hard Disk Partition.
+ 
+There are three types of BOOT systems you can install: Minimum. PM, and
+WPS.
+ 
+---------------------------------------------------------------------------
+LP3820.ZIP              Date Issued - April 12, 1993
+                        Latest Release - Sept. 07, 1995
+ 
+Author: Ken Borgedale   IBM Boca Raton, FL
+ 
+Version 2.5a -
+ 
+Most documents created within IBM are in the AFP format (LIST3820,
+LIST38PP, PSEG3820).  lp3820 allows you to print AFP documents on
+personal laser printers (IBM LaserPrinter, HP LaserJet, and any
+PostScript printer).
+ 
+lp3820 consists of a single program which will run in any version
+of OS/2, or in DOS 3.3 and above.
+ 
+---------------------------------------------------------------------------
+FENX2.ZIP                 Date Issued - Sept. 30, 1994
+                          Latest Issue - June 08, 1995
+ 
+Author: Joe DiAdamo
+ 
+ 
+Ver. 1.20
+ 
+File Phoenix will scan a selected drive and list all files
+which are (possibly) recoverable. You can then select one or
+more files and recover them to another drive.
+ 
+File Phoenix also allows you to:
+ 
+     1) View the first 4096 bytes of a file before
+        recovering it.
+     2) View each cluster of an erased FAT file and
+        decide whether you want to recover it or skip
+        it.  This is especially useful when recovering
+        files who's clusters were not contiguous.
+     3) Search the free space on a FAT drive for text and
+        start recovering data from where the text was found.
+ 
+Both HPFS and FAT drives are supported.
+ 
+Use the right mouse button to display the context menu.
+You can do this with the mouse over the main window or over
+a file in the list of recoverable files.
+ 
+Startup parameters:  -r  - does not use the saved window
+                           position and size from the
+                           previous invocation.  This is
+                           useful if you change the
+                           resolution for your monitor.
+ 
+What's new in release 1.20:
+ 
+     1) On-line help (finally!)
+     2) FastScan for HPFS
+     3) Search free space on a FAT drive for text
+     4) Skip backward in prompted recovery
+ 
+---------------------------------------------------------------------------
+ 
+QCONFG.ZIP                Date Issued - January 20, 1993
+Ver.  2.22                Latest Issue - June 08, 1995
+Author: Norris Couch        IBM Boca Raton FL.
+ 
+3 programs, all the same report, but an OS/2 version, DOS version, and a
+Bi-Modal verion to report you system configuration. Output can be
+redirected to another file or a printer.
+ 
+Updated with fixes, now works to identify a 486...
+ 
+Version 2.22 with updated reporting of machines/processors/adapters
+and new configuration details reported. See QSYSTEM/QCONFIG.NEW.
+ 
+-----------------------------------------------------------------------
+OS2GFC.ZIP               Date Issued - February, 1 1994
+                         Latest Issue - May 09, 1995
+ 
+Author: Barney Scott
+ 
+Ver. 1.2
+ 
+GFC is a graphical file comparison program. It compares two files on disk and
+notes lines that are common to both. A bar chart is drawn, giving an overall
+view of which lines match, and the text of either file, or a composite file,
+is displayed. The default view is the composite file.
+ 
+---------------------------------------------------------------------------
+CDEXPL.ZIP                Date Issued - August 7, 1992
+                          Latest Release Date - May 09, 1995
+Author: Dave Thomas       IBM Research Triangle Park, NC.
+CDEXPLOR  Version 2.5
+ 
+Features: Play including options for disc repeat, track repeat
+Disc status/Counter, Eject, Pause/Stop, Skip to next/previous track.
+Output to CD-attached headphones or audio card-attached speakers.
+Table of contents - allows random track selection, plus a nifty way to
+indicate current track via auto-selection in list.
+Mini window option requires less screen space to interact with CD.
+Shares CD with other well-behaved CD applications.
+ 
+Requires --
+- MMPM/2 (multimedia extensions to OS/2 2.0) installed with CD support
+- An MMPM/2 supported CD player that allows digital audio disc playback
+  - IBM 3510
+  - IBM CD ROM II (XA)
+  - Toshiba functional equivalents to the above
+- Output to speakers requires an audio card like IBM M-Audio ACPA
+  - Headphone support via the CD headphone jack is the default
+ 
+Release History (most recent first)
+ 
+---------------------------------------------------------
+2.5     5/2/95    - Save INI info on system shutdown
+                  - AutoCD tweak (play button inactive until ready)
+                  - Fix Trap if disc ejected while in track info dialog, "OK"
+                    Thanks, M.K.
+                  - Added size borders to main info window
+                  - Recompiled for OS/2 3.0
+                  - Fixed mini window disappearance on Warp
+ 
+2.4     6/20/94   - Add "Resume on Restart" - saves track, position, and
+                    playback status on exit. Used only if same disc on 
+                    restart.
+                  - Fixed the Front jack/Audio card digital transfer problem
+                    Now knows better how to sense proper config. Thanks G.L.
+                  - Add Repeat track segment: Mark start, stop, repeat button
+                  - Add Toggle Size button under minimize button. Toggles
+                    from full-size to mini window.
+                  - Replace current track static field with drop-down combo 
+                    box
+                    - select/change track info from here or from dialog
+                    - change format of CDEXPLOR.INI - use CDEXCONV to convert
+                    - stopped parsing tabs into " - ". More WYTIWYG (what
+                      you type is what you get) now.
+                  - Volume slider (volume saved when you "Save Settings")
+                  - Replace "Track Info" button with cute pencil button
+                  - Add fast forward button
+                  - Add "Total Disc Length" in Track Info Window
+                  - Fixed track repeat and shuffle bug - no longer plays
+                    first
+                    chunk of next track.
+                  - fixed idiotic flickering of play button
+                  - improved performance by doing much less during pos 
+                    notifies
+ 
+ 
+2.3     8/9/93    - Add "Save Settings" - saves user selections, window pos
+                  - Fix funkiness with Mute/Sound button visibility
+                  - more legible mini icon
+ 
+2.2     7/9/93    - Recompile for MMPM 1.1 (OS/2 2.1)
+                  - track info saving working now on OS/2 2.1
+                  - fix bug if non digital audio disc (like CD ROM) inserted
+ 
+2.0     3/09/93   - Fix format of counter
+                  - Track counter in status area is now editable spin button
+                  - Position is user-modifyable (only when stopped)
+                  - "User Track Info" window replaces Table of contents
+                    allows user to add and save track names (or ANY information)
+                    - CD Explorer will recognize discs it has saved before
+                      and load any user info.
+                  - Disc shuffle
+                  - Mute
+                  - partial function option for better performance
+                    (overhaul for better performance)
+                  - Overhaul user interface for better use of screen space
+                    - full-size at screen yTop will stay on screen
+ 
+1.0     7/31/92   - Shares CD with other CD apps (supports PASSDEVICE)
+                    - all global data now stored in window words
+                    - Multiples explorers at different places on same disc!
+                  - unlock drive on exit (and other fixes)
+                  - change forward trk and Rev Trk buttons to |<< and >>|
+                    to indicate going to track boundary.
+                  - hi res minimize icon for pretty 8514 display
+                  - save 4K on device-independent prod info box bitmap
+ 
+---------------------------------------------------------------------
+GFOLDR.ZIP              Date Issued - May 19, 1993
+                        Latest Release - April 04, 1995
+(Version 2.3f)
+Author: Dan Kehn           IBM Cary, NC
+ 
+Group Folder
+ 
+  To handle the problem of getting to an object in a folder, many
+  users create a special folder to hold objects that they frequently
+  use.  But often this new folder becomes filled with objects, some
+  of which are only used once a month while others are used hourly.
+  Locating a desired object in such a folder can be like trying to
+  find "a needle in a haystack".
+ 
+  To solve the retrieval problem, Group Folder allows you to create
+  visible subsections within a given folder.  Thus, you have more
+  control over the organization of the contents of folders.  The
+  grouping of related objects helps you locate the object you want
+  more quickly.
+ 
+-------------------------------------------------------------------------
+EXCAL.ZIP                 Date Issued  - Feb., 1 1994
+                          Latest Release - April, 04 1995
+Ver. 3,0
+ 
+Author: Diana Soost and Dan Kehn     IBM UK
+ 
+  ExCal provides a means for a user to keep track of their
+  day-to-day activities.  The calendar allows you to view months at
+  a glance and to schedule events for one or more days.  The events
+  may be scheduled to occur on a single day, daily, monthly, weekly,
+  or yearly.  To remind you of a given event, you can set an event
+  alarm.
+ 
+---------------------------------------------------------------------------
+TVFS.ZIP                  Date Issued - July 28, 1994
+                          Latest Issue - March 22, 1995
+ 
+Version 2.09
+ 
+Author: T.B. Francis and M.D. Leitch
+ 
+ 
+The Toronto Virtual File System (TVFS) is an OS/2 Installable File System
+that combines VM and UNIX (**) file system concepts.  The specific VM file
+system concept employed is the "CMS search path".  The specific UNIX file
+system concept employed is the "symbolic link". 
+ 
+The TVFS provides a virtual OS/2 file system that combines symbolic links,
+search paths, and permissions.  Through the TVFS, local and remote file
+systems may be combined into a single, virtual file system.
+ 
+--------------------------------------------------------------------------
+UTLOS2.ZIP                Date Issued - March 08, 1995
+ 
+Version 1.00
+ 
+Author: Brian Yoder
+ 
+ This package contains a set of command-line utilities. Each is
+ available for OS/2 2.X and DOS.
+ 
+ The OS/2 versions are more capable then their DOS counterparts
+ (including support for HPFS long filenames and for extended
+ attributes). However, users with systems that are configured for
+ dual boot will find it convenient to have these commands
+ available whether booting OS/2 or native DOS. In addition, the
+ native DOS versions will run within an OS/2 windowed or
+ full-screen DOS session, though with reduced function as
+ compared to their OS/2 counterparts.
+ 
+UTILITIES
+ 
+        Name        Description
+        ----------- ---------------------------------------
+        ccp.exe     Conditional file copy: Very nice!
+        chmod.exe   Change file mode (attributes)
+        crc.exe     Calculate CRCs for files
+        crcchk.exe  Calculate and check CRCs for files
+        du.exe      Display file space usage
+        grep.exe    Search text or binary files for a pattern
+        ls.exe      List directory
+        txtcut.exe  Preprocess text for cut, awk, or Perl
+ 
+---------------------------------------------------------------------
+TXT2PS.ZIP                Date Issued - September 1, 1992
+                          Latest Release Date - March 08, 1995
+Ver 2.56
+ 
+Author: Mason Williams    IBM Almaden, CA.
+ 
+TXT2PS contains TEXTorPS for PostScript Printers.  TEXTorPS is an
+application program that can enhance the usability of OS/2
+PostScript printers by permitting the user to leave the printer in
+PostScript mode and still print text sent to the printer spooler by
+applications which are not PostScript aware.  When TEXTorPS is running,
+PostScript printer jobs are undisturbed, but other text files are
+modified by the insertion of a PostScript program to interpret the job
+as ASCII text.  The user may specify the font, typesize, line spacing,
+margins, orientation, page numbers and strings on each page.
+ 
+Version 2.09 -
+ 
+            This corrects failure to print when options to include
+             NLS chars or more chars from CP437, which was the initial
+             selection in v 2.08.
+ 
+Version 2.15
+ 
+Revised for more robust operation under OS/2 2.1, help text revised.
+TXT2PS contains TEXTorPS for PostScript Printers.  TEXTorPS is an
+application program that can enhance the usability of OS/2
+PostScript printers by permitting the user to leave the printer in
+PostScript mode and still print text sent to the printer spooler by
+applications which are not PostScript aware.  When TEXTorPS is running,
+PostScript printer jobs are undisturbed, but other text files are
+modified by the insertion of a PostScript program to interpret the job
+as ASCII text.  The user may specify the font, typesize, line spacing,
+margins, orientation, page numbers and strings on each page.
+ 
+Version 2.50 is a rewrite to permit use of newer 32 bit drivers.
+ 
+Version 2.51  Major revision 32 bit version, Spooler interface now.
+ 
+Version 2.54 has a fix for NET USE from the 2.51 major rewrite for Warp.
+ 
+Version 2.56 has minor fixes and allows up to 5 parameter sets.
+ 
+--------------------------------------------------------------------------
+PMCALC.ZIP                Date Issued - March 02, 1995
+ 
+ 
+Author: Tim Baldwin, IBM UK Laboratories
+Version:1.00
+ 
+PMCALC is a OS/2 Presentation Manager simulation of a typical pocket
+calculator.  It provides 12-digit floating point numbers, standard
+arithmetic functions, a memory, plus a selection of trigonometric,
+logarithmic and scientific functions.
+ 
+---------------------------------------------------------------------------
+LCKDRV.ZIP                Date Issued - January 27, 1995
+ 
+Author: Doug Azzarito
+ 
+Version 1.0
+ 
+This program will allow DOS programs to gain direct access to disk
+drives under OS/2. Without this utility, programs that attempt to
+write directly to the disk will fail(disk editors, defragmentation
+utilities, etc).
+ 
+------------------------------------------------------------------------
+CHKSTO.ZIP                Date Issued - Feb., 1 1994
+                          Latest Release - Dec. 08, 1994
+ 
+Author: David Kelsey
+ 
+Ver. 2.12
+ 
+CHKSTORE is a package which will check on the use of space on user's home
+directories. It they exceed a limit imposed on them, then the system will
+"revoke" that user by changing access of their home directory and all their
+subdirectories to be RDA. If a user has been "revoked" and their home directory
+is either increased or the user deletes some files then the package will
+"unrevoke" the user by giving them full access back to their directory.
+ 
+------------------------------------------------------------------------
+BINGO2.ZIP               Date Issued - Dec. 02, 1994
+ 
+Ver. 1.44
+ 
+Author: Ray Zapanta
+ 
+Bingo/2 for OS/2 is a 32-bit, multi-threaded, multi-media OS/2 2.x 
+Presentation Manager software program which allows you to play many
+different types of bingo games on your computer. 
+ 
+---------------------------------------------------------------------------
+SHFTRN.ZIP                Date Issued -August 5, 1992
+                             Latest Release - Nov. 18, 1994
+Ver. 1.60
+ 
+Author: Michael Harris    IBM Cary N. C.
+ 
+ShiftRun is a utility that enables you to optionally run any OS/2 Full Screen
+program while OS/2 is booting.  When ShiftRun is started, it waits for the
+number of seconds that you specify and then checks to see if the LEFT shift
+key is pressed.  If it is pressed, ShiftRun will start an OS/2 Full Screen
+program that you specify.  Presentation Manager will not load until you exit
+the Full Screen Program.  If the LEFT shift key is not pressed, ShiftRun will
+exit and Presentation Manager will load.
+ 
+--------------------------------------------------------------------------
+APMTST.ZIP                      Date Issued - Nov. 16, 1994
+ 
+ 
+Author:Dev Banerjee
+ 
+APMT provides a set of executables and a REXX function package. Using
+the functions provided you can write a REXX program which can drive a
+PM application running on the same or a different PC. Thus the REXX
+program can act as a test script for testing the PM application.
+ 
+--------------------------------------------------------------------------
+GOPHER.ZIP                      Date Issued - April 8, 1993
+                                      Latest Release - Nov 10, 1994
+Author: David S. Singer           IBM Almaden, CA
+ 
+Gopher is an OS/2 Presentation Manager client for the Internet Gopher
+protocol, as originally developed at the University of Minnesota.
+ 
+You must have OS/2 TCP/IP (Version 1.2.1 or later) to use Gopher.
+ 
+Ver 1.9915
+ 
+Fixes some storage allocation errors, and improves the default network
+selection process.
+ 
+---------------------------------------------------------------------------
+MCLIP.ZIP                 Date Issued - October 25, 1994
+Ver 3.3
+ 
+Author: Tim Francis
+ 
+ManyClip provides multiple OS/2 PM text clipboards.  Its operation is
+completely transparent to (and thus compatible with) all applications
+that use the clipboard.
+ 
+ManyClip also includes an editable PM view of the current clipboard,
+and the ability to save, restore, and print any or all clipboards.
+ 
+----------------------------------------------------------------------
+LANXCO.ZIP                Date Issued - Sept. 08, 1994
+ 
+Author: Chris Ahl
+ 
+ver. 1.00
+ 
+LANXCOPY is a simple program which allows for the transfer of files
+from one PC to another PC via the LAN.  NETBIOS is used for the file
+transfer so there is no need to install and/or setup PCLP and/or
+LAN Requester/Server.
+ 
+-----------------------------------------------------------------------
+RINGUT.ZIP                Date Issued - Sept. 08, 1994
+ 
+Author: Chris Ahl
+ 
+ver. 1.02
+ 
+   This program displays the LAN Ring Utilization for the ring
+on which the station resides.  Utilization is checked every minute
+and the last hour of activity is graphed.
+ 
+--------------------------------------------------------------------------
+ 
+VPOKER.ZIP                Date Issued - 06/16/94
+ 
+  Author: Brett King
+ 
+VPoker is a pretty standard Video Poker game like you would find in
+casinos in Las Vegas or Atlantic City.  It is 5 card draw, with no wild
+cards.  I've tried to make the game more interesting by adding MMPM/2
+sounds and unusual cards.  This program was written using VisPro/REXX(tm)
+from Hockware.
+ 
+ 
+------------------------------------------------------------------------
+PROGRF.ZIP              Date Issued - Feb., 1 1994
+                           Latest Issue - Feb, 9 1994
+Author: Felix Sawicki
+ 
+ver. 1.1
+ 
+Progref is a pm utility to quickly generate Program reference objects from
+executables. The program program accepts as input 0 or more fully
+defined program names (ie the path is included) separated by blanks.
+For example "progref d:\abcd\test.exe f:\zyz\next.cmd".  If no argument is
+supplied a file dialog provides for selection of the input file.
+Alternatly, selecting executables from the drives object and dropping them on
+a program reference of progref itself will provide the same input.  A simple
+one panel dialog will allow the user to select the parameters described below.
+The program reference objects will be put on the desktop, where they can be
+dropped into the folders of your choice. The repeat button will produce
+a program reference object and leave the dialog box in place.  This is
+handy if you want to make multiple copies with minor changes.
+ 
+ 
+------------------------------------------------------------------------
+ENVED.ZIP                  Date Issued - Feb, 1 1994
+ 
+Author: Tim Baldwin
+ 
+Ver. 1.1
+ 
+ENVED is an OS/2 full screen or windowed command prompt program that
+provides an editor for the current process environment variables.
+Current environment values may be changed, new values added or unwanted
+values deleted, all from an easy to use full screen interface.  This may
+be of particular interest to application developers where a tweak or two
+to an environment variable is often needed to help compilation, testing
+or debugging.
+ 
+-----------------------------------------------------------------------
+ROBOSV.ZIP                Date Issued  - Feb., 1 1994
+ 
+Author:  Dick Kurtz and Jeff Knauth
+ 
+ver. 3.04
+ 
+ROBOSAVE allows you to easily back up your OS/2 2.x Desktop and later
+restore it to the same system.  You can also specify a limited number of
+files to be saved/restored.  A simple text profile controls the ROBOSAVE
+operation.
+ 
+----------------------------------------------------------------------
+700PRO.ZIP                Date Issued  - Feb., 1 1994
+ 
+Author:   Naotaka kato
+ 
+ver.1.2
+ 
+This program:
+         - was prepared for a customer who uses ThinkPad 700C/720C
+           as a presentation tool at conference.
+ 
+ 
+-----------------------------------------------------------------------------
+ 
+TINYED.ZIP                Date Issued - August 11, 1992
+                             Latest Release - February 1, 1994
+Author: Tim Baldwin       IBM United Kingdom Laboratories Ltd.
+ 
+There are times even in today's world of multi-megabyte personal
+computers when a quick, simple and small text editor is of benefit.
+With a .EXE file of less than 9K bytes T is designed to fit that role.
+For the DOS user trying to cram more and more into 640K the advantages
+of small size are obvious, for the OS/2 user the speed and ability to
+run when even Presentation Manager is unavailable may prove just as
+useful.
+ 
+---------------------------------------------------------------------------
+ 
+MSHELL.ZIP                    Date Issued - February 1, 1994
+Author: Monte Copeland           IBM, Boca Raton, Fl
+ 
+    MShell is a mini PM shell for OS/2 2.X that uses the RUNWORKPLACE
+    architecture of the Workplace Shell. MShell is basically a
+    program launcher; configure programs by editing a plain-text INI.
+ 
+------------------------------------------------------------------------
+ 
+EXEMAP.ZIP                       Date Issued - August 28, 1993
+                                Latest Release: November 11, 1993
+Author: Brian Kenn              Australian Programming Centre, IBM Australia
+ 
+This utility maps OS/2 V2, V1, Windows and PC-DOS EXE Headers.  This
+version includes extensive cross-referencing and decoding of module
+ordinal numbers into a readable format.
+ 
+---------------------------------------------------------------------------
+CLIPSRV.ZIP                             Date Issued - October 28, 1993
+                                        IBM  Cary, N.C.
+ 
+Author: Patrick Mueller
+ 
+Version 1.0
+ 
+ClipServ.exe is a PM program that acts as an OS/2 tcp/ip server for the
+system clipboard.  A remote client can request the text (CF_TEXT)
+contents of the clipboard from the system ClipServ.exe runs on.  A
+sample client for XEDIT on CMS is provided as an example.  This client,
+GETCLIP XEDIT, provides a paste function for XEDIT.
+---------------------------------------------------------------------------
+ 
+CLOKGS.ZIP                   Latest Release Date - October 28, 1993
+                                Date Issued - October 3, 1992
+ 
+Author: Gunnar P. Seaburg IBM Houston Texas.
+ 
+GPSCLOCK is a simple digitial clock program for OS/2.
+Double-click mouse button 1 on its window to set options, or
+start it like this:
+ 
+     start gpsclock ?
+ 
+to see options available.  Double-click with mouse button 2 to
+end the program.
+---------------------------------------------------------------------------
+TUNEUP.ZIP                      Date Issued - August 24, 1993
+                                   Latest Release Date - October 25, 1993
+Author: Ken Hubacher            IBM Austin, Texas
+ 
+TUNEUP  Version 1.00
+ 
+TuneUp is a tool to assist administrators of IBM LAN Server version 2.0
+and 3.0 in performance and tuning of their LAN Server environments.
+This offers an easy interface where users are prompted for questions and
+then recommendations are calculated and supplied back in an ascii file.
+ 
+Ramcalc is a separate tool included with TuneUp.  Ramcalc provides an
+easy interface to determine the amount data ram area Netbios and 802.2
+protocols are utilizing.  Each protocol must be less than 64k of system
+RAM that is allocated for its use.
+ 
+----------------------------------------------------------------------
+RXFTP.ZIP                               Date Issued - October 25, 1993
+Author: Patrick Mueller
+ 
+- Rexx Function Package for TCP/IP FTP for OS/2 2.0
+ 
+rxFtp is a REXX function package providing access to the OS/2
+TCP/IP FTP API as provided by the IBM TCP/IP product, version
+1.2.1.
+----------------------------------------------------------------------
+ 
+EPMPLX.ZIP                      Date Issued - August 17, 1993
+Author: Steve Greenspan
+ 
+EPMPLX  Version 2.2
+ 
+EPM PL/x Coding Assist (EPMPLx) is a set of EPM key definitions and
+command macros that attempts to improve programmer productivity (and
+decrease frustration) while writing PL/1 type code.
+EPMPLx eases the task of coding in the following ways:
+ 
+   * Structure expansion - PL/AS structures such as IF, ELSE, DO,
+   BEGIN, PROCEDURE, GENERATE, SELECT, and WHEN are automatically
+   expanded.  You just enter the structure keyword and the entire
+   structure is placed into the file.
+   * Automatic remark placement - Remarks are automatically started in
+   the column you select.
+   * Automatic and controlled remark formatting - When entering
+   remarks the text of the remark is automatically formatted to stay
+   within set columns.  Remarks can also be reformatted at your
+   request.  The starting and ending columns can be changed at any
+   time.
+   * Automatic flagging - You can have 4 or 8 character change flags
+   automatically placed into your remarks.
+   * Case control -
+   -  Text entered as code can be forced to uppercase, swapped, or asis.
+   -  Keywords can be upper, lower, or mixed case.
+   * Controlled code insertion and deletion - When code is inserted or
+   deleted on a line containing a remark, the remark is not moved.
+   * Remark reformatting - The text of a remark can be reformatted at
+   the touch of a key.
+   * Auto indent - When a new line is inserted, the cursor is placed
+   in the line and column in which you probably want to enter new
+   code.
+   * Block comment insertion and editing - When adding new or editing
+   old block comments, you can enter the text of the comment without
+   worrying about the block comment delimiters.
+ 
+--------------------------------------------------------------------------
+RXSOCK.ZIP                      Date Issued - April 8, 1993
+                             Latest Release Date - August 16, 1993
+Author: Patrick Mueller    IBM  Cary, N.C.
+ 
+RXSOCK Version 1.3
+ 
+rxSock - Rexx Function Package for TCP/IP Sockets for OS/2 2.0
+ 
+rxSock is a REXX function package providing access to the OS/2
+TCP/IP socket API as provided by the IBM TCP/IP product, version
+1.2.1.
+ 
+Release History
+ 
+08/05/93
+   - version 1.3
+   - fixed stupid bug in SockGetPeerName() and SockGetSockName()
+ 
+07/16/93
+   - version 1.2
+   - added SockVersion(), SockClose(), SockIoctl(), SockSelect(),
+     SockGetSockOpt(), SockSetSockOpt()
+   - changed documentation for SockGetHostByName() and SockGetHostByAddr()
+     to reflect what the code actually does
+   - now return a list of addresses per host instead of just one
+ 
+---------------------------------------------------------------------------
+ 
+CSTEPM.ZIP                      Date Issued - August 6, 1993
+Author: Larry Margolis          IBM Yorktown Research Center, N.Y.
+ 
+CUSTEPM  Version 1.00
+ 
+CustEPM adds an Actions menu to EPM, in a way that makes it easy for
+users to incorporate into their own EPM setup.  It is a customized
+version of EPM that users who don't want to recompile the macros can use
+directly, that users who want to customize only by setting flags in the
+MYCNF.E and recompiling can incorporate, and that true hackers can start
+with as a base and modify to their hearts' content.
+ 
+---------------------------------------------------------------------------
+L40BAT.ZIP                Date Issued - November 6, 1992
+                             Latest Release Date - August 6, 1993
+Author: Barry Diller      IBM Houston Texas.
+L40BATT Version  2.21
+ 
+L40BATT is an OS/2 PM 1.30.1 or 2.0 program for monitoring the condition of
+the IBM PS/2 L40 SX battery. Bar graphs show the battery voltage and the
+current (in amperes) being drawn from the battery. Both graphs are updated
+once a second. A line graph displays the 'historical' value of the battery
+voltage so that you can monitor the battery's rate of charge or discharge.
+ 
+Version 2.21  July 22, 1993
+ 
+  Error pop-up messages are now written to a log file.
+  'Phantom' errors from the system are now detected and ignored.
+  Increased the program stack to account for new OS/2 2.1 requirements.
+  Found a compiler switch set wrong - unknown if it caused any problems.
+  Program was not saving options correctly under OS/2 2.1, causing multiple
+  unrelated program errors at subsequent startups.
+  Program options are now saved to L40BATT.INI, and not to OS2.INI.
+  Released to the world via the IBM Employee Written Software program.
+ 
+Version 2.20  February 9, 1993
+ 
+  Added option to sync window title updates to bar or line graph updates.
+  Revised display code to not redraw the line graph each second.
+  Changed the 'simulated display' mode to be more visually interesting.
+  Released to the world via the IBM Employee Written Software program.
+ 
+---------------------------------------------------------------------------
+L40TEM.ZIP                Date Issued - August 5, 1992
+                             Latest Release - August 8,1993
+Author: Barry Diller      IBM Houston Texas.
+L40TEMP Version 2.21
+ 
+L40TEMP is an OS/2 PM 1.30.1 or 2.0 program for monitoring the temperature of
+the IBM PS/2 L40 SX battery and the ambient temperature inside the PS/2's case.
+Bar graphs show the battery and ambient temperatures, in degrees Fahrenheit or
+degrees Celcius. Both graphs are updated once a second. A line graph displays
+the 'historical' value of either temperature so that you can monitor the rate
+of temperature change.
+ 
+   Version 2.21
+ 
+  Error pop-up messages are now written to a log file.
+  'Phantom' errors from the system are now detected and ignored.
+  Increased the program stack to account for new OS/2 2.1 requirements.
+  Found a compiler switch set wrong - unknown if it caused any problems.
+  Program was not saving options correctly under OS/2 2.1, causing multiple
+  unrelated program errors at subsequent startups.
+  Program options are now saved to L40TEMP.INI, and not to OS2.INI.
+  Released to the world via the IBM Employee Written Software program.
+ 
+---------------------------------------------------------------------------
+COLRPT.ZIP                Date Issued - November 6, 1992
+                             Latest Release Date - August 6, 1993
+Author: Barry Diller      IBM Houston Texas.
+COLORPT Version 1.01
+ 
+COLORPT is an OS/2 Presentation Manager program that continually reports the
+name and value of the color of the pel (pixel) that is under your OS/2 PM mouse
+pointer. The color value can be displayed in several different color models.
+COLORPT is especially targetted to users of PCs with grayscale video or LCD
+displays.
+ 
+  Version 1.01
+ 
+  Program was not saving options correctly under OS/2 2.1, causing multiple
+  unrelated program errors at subsequent startups.
+  Program options are now saved to COLORPT.INI, and not to OS2.INI.
+  Released to the world via the IBM Employee Written Software program.
+ 
+--------------------------------------------------------------------------
+ 
+EXDESK.ZIP                      Date Issued - August 6, 1993
+Author: Dan Campbell              IBM Raleigh, N.C
+EXTDESK  Version 1.00
+ 
+EXTDESK is a WPS Class DLL for the "ExtendedDesktop" object class,
+which is a subclass of the "WPDesktop" object class.  Its purpose
+is to extend the functions of the OS/2 2.x Desktop object.
+ 
+   ExtendedDesktop extends the OS/2 2.x WPS Desktop to:
+ 
+1) Optionally remove Arrange & Sort from the Desktop context menu.
+2) Align groups of icons on the Desktop vertically or horizontally.
+3) Snap-to-Grid with user defined Grid Spacing.
+4) Precisely position individual icons on Desktop from Settings Notebook.
+5) Precisely position individual icons on Desktop from C or REXX.
+ 
+-------------------------------------------------------------------------
+BN2SRC.ZIP                      Date Issued - August 5, 1993
+Author: Kennneth A. Kahn          IBM Poughkeepsie N.Y.
+BIN2SRC Version 1.00
+ 
+The BIN2SRC utilities convert Binary Data Files to equivalent High Level
+Language Structures. You can add the conversion directly into source code
+for the C, MASM or RC compilers.
+ 
+The following utilities come with the package:
+ 
+ BIN2MASM  =  Translates Binary Data to an equivalent MASM DB Structure
+ BIN2C     =  Translates Binary Data to an equivalent C BYTE Array
+ BIN2RC    =  Translates Binary Data to a form compatable with the
+               RCDATA Resource type
+ 
+--------------------------------------------------------------------------
+ 
+LTRNAM.ZIP                      Date Issued - August 5, 1993
+Author: Kennneth A. Kahn          IBM Poughkeepsie N.Y.
+LTRENAME Version 1.00
+ 
+Normally, the OS/2 CM assigns by default the Text "HOST - X - 3270 Emulator"
+to an LT session as the Title for both the LT Window and as the Entry Text
+in the OS/2 Window List (the Switch Entry).  This default text is not very
+descriptive.  The LTRENAME utility allows you to change this Title Text to
+any valid ASCII string.  This allows you to more easily identify your LT
+sessions, especially when the are minimized.  The new Text string can be as
+simple as the Host Name, or as complicated as you need.
+ 
+--------------------------------------------------------------------------
+ 
+MEGADS.ZIP                      Date Issued - August 5, 1993
+ 
+Author: Brent Gross              IBM Toronto, Canada
+MEGADESK Version 2.24
+ 
+Megadesk expands your desktop to increase the height and width of your
+screen. It allows movement to each screen-sized "room" with a single
+mouse-click on the desired room's "picture" in Megadesk's main window
+ 
+The Megadesk picture is drawn with the pull-down in the "Options" menu
+item "Redraw all Screens". When windows move within a room, Megadesk's
+picture of the room can be updated with a right-mouse double-click on the
+picture.  If you want a window to appear in all rooms, select it in the
+"Locks" menuitem pull-down and it will stay on the screen as you move to
+all your new rooms (Megadesk itself is automatically locked).
+ 
+----------------------------------------------------------------------
+PMPRTF.ZIP                Date Issued - September 3, 1992
+                             Latest Release - June 17,1993
+Author: Mike Cowlishaw    IBM United Kingdom Laboratories.
+ 
+* Would you like to use the C standard function 'printf' in your PM
+  programs for debugging, occasional error messages, etc.?
+ 
+* Do you have existing subroutines, that use printf, that you'd like to
+  use in PM programs?
+ 
+If you answer yes to either of these, you may find the PMprintf tool
+useful.  PMprintf comprises two parts:
+ 
+  printf.obj -- an object file, compiled with IBM C Set/2, which you
+    link in with your PM program just like any other subroutine.  This
+    provides the printf service to that program.  You write printf calls
+    in your C program in the usual way; the printf subroutine buffers
+    the data (on a per-thread basis in multi-thread programs) and adds
+    each completed line to a message queue.  For example, the following
+    printf call will write a line to the PMprintf application and sound
+    the Alert (bell):
+ 
+      printf("This seems to work\a\n");
+ 
+    Sample source (in C) is also provided for the printf function.
+ 
+  pmprintf.exe -- is a PM application which sets up the queue used by
+    printf and then "catches" and displays incoming printf lines.  It is
+    a kind of 'monitor' or 'virtual console' which will accept lines
+    from any number of processes that use printf.  PMprintf offers a
+    number of options, including the ability to log the incoming lines
+    to a file.  See below for a short description of the options.
+ 
+    If PMprintf has been started then it will display the incoming lines
+    from printf calls in other processes.  If it has not been started,
+    then printf calls are quietly ignored (they return 0, not an error).
+    PMprintf can be started or stopped at any time, and printf calls
+    will then become active or be ignored as appropriate.
+ 
+Sample source for printf (printf.c) is included in the package; this
+offers certain customization options (for example, you can cause a
+prefix to be added to the start of each line so that different
+applications can have unique output lines, or cause lines to be broken
+at a certain length). There are also some usage hints and minor
+restrictions, documented in the header of printf.c.
+ 
+---------------------------------------------------------------------------
+PMGB32.ZIP                Date Issued - September 3, 1992
+                          Latest Release Date - June 17,1993
+Author: Mike Cowlishaw    IBM United Kingdom Laboratories.
+ 
+PMGlobe is a program which displays the Earth as a globe using OS/2
+Presentation Manager.  You can choose to view the globe from any
+direction, or select one of a number of 'standard' views.
+ 
+In addition to simply displaying a picture of the world, PMGlobe will
+also let you light the globe as though by sunlight -- so you can see
+at a glance those areas of the globe where the sun has risen, and where
+it is night.  Additional options add shading to the globe for a
+three-dimensional effect, and let you measure distances between
+two points on the globe.  Other features are described in the file
+PMGLOBE.DOC.
+ 
+With the command interface included with PMGlobe, you can add markers
+and labels to the globe and have greater control over its actions.  If
+you wish, you can use REXX (the scripting language included with OS/2)
+as a macro language for PMGlobe -- see PMGLOBEX.DOC for a description of
+the PMGlobe commands available; all of them can be used in a REXX macro.
+ 
+Ver 2.02 fixes a problem with DOS programs (even COMM ones) and adds
+         on-globe clock capability.
+---------------------------------------------------------------------------
+ 
+21MEMU.ZIP                Date Issued - January 12, 1993
+ 
+                   ---->  Withdrawn   - June 16, 1993 <----
+ 
+Author: Ross Cook         IBM Boca Raton FL.
+        Glenn Brew        IBM Boca Raton FL.          *
+ 
+  /*----------------------------------------------------------------*/
+  /*                                                                */
+  /* Withdrawn as the Version 1.02 20MEMU.ZIP now supports OS/2 2.1 */
+  /*                                                                */
+  /*----------------------------------------------------------------*/
+ 
+This is a replacement DLL for 20MEMU.ZIP that allows 20MEMU.ZIP to be used
+on the IBM OS/2 2.1 Beta. The original 20MEMU must be installed first, and
+the DLL in this package replace the original one.
+ 
+---------------------------------------------------------------------
+TXT2PS.ZIP                Date Issued - September 1, 1992
+                          Latest Release Date - May 20, 1993 (Ver 2.15)
+Author: Mason Williams    IBM Almaden, CA.
+ 
+TXT2PS contains TEXTorPS for PostScript Printers.  TEXTorPS is an
+application program that can enhance the usability of OS/2
+PostScript printers by permitting the user to leave the printer in
+PostScript mode and still print text sent to the printer spooler by
+applications which are not PostScript aware.  When TEXTorPS is running,
+PostScript printer jobs are undisturbed, but other text files are
+modified by the insertion of a PostScript program to interpret the job
+as ASCII text.  The user may specify the font, typesize, line spacing,
+margins, orientation, page numbers and strings on each page.
+ 
+Version 2.09 -
+ 
+            This corrects failure to print when options to include
+             NLS chars or more chars from CP437, which was the initial
+             selection in v 2.08.
+ 
+Version 2.15
+ 
+Revised for more robust operation under OS/2 2.1, help text revised.
+TXT2PS contains TEXTorPS for PostScript Printers.  TEXTorPS is an
+application program that can enhance the usability of OS/2
+PostScript printers by permitting the user to leave the printer in
+PostScript mode and still print text sent to the printer spooler by
+applications which are not PostScript aware.  When TEXTorPS is running,
+PostScript printer jobs are undisturbed, but other text files are
+modified by the insertion of a PostScript program to interpret the job
+as ASCII text.  The user may specify the font, typesize, line spacing,
+margins, orientation, page numbers and strings on each page.
+ 
+ 
+----------------------------------------------------------------------
+GFOLDR.ZIP              Date Issued - May 19, 1993
+                           Latest Release - November 9, 1993(Version 2.0)
+Author: Dan Kehn           IBM Cary, NC
+ 
+Group Folder
+ 
+  To handle the problem of getting to an object in a folder, many
+  users create a special folder to hold objects that they frequently
+  use.  But often this new folder becomes filled with objects, some
+  of which are only used once a month while others are used hourly.
+  Locating a desired object in such a folder can be like trying to
+  find "a needle in a haystack".
+ 
+  To solve the retrieval problem, Group Folder allows you to create
+  visible subsections within a given folder.  Thus, you have more
+  control over the organization of the contents of folders.  The
+  grouping of related objects helps you locate the object you want
+  more quickly.
+ 
+---------------------------------------------------------------------------
+ELEPHT.ZIP               Date Issued  - May 4, 1993
+Author: David Slauson    IBM T.J. Watson Research Center
+                             Yorktown Heights, N.Y.
+ 
+Tiny Dancing Elephant (with digital clock)        v1.21
+ 
+ELEPHANT is a little demo of OS/2 animation using icons.  It
+displays a small icon-sized picture of a little elephant,
+standing on a red carpet, dancing in front of a breaking window.
+ 
+The program also displays a digital clock, in order to provide
+some marginal utility.  Some users have also used
+ELEPHANT as a system monitor; as a system gets busier,
+the elephant's dancing becomes slower and jerkier.
+ 
+---------------------------------------------------------------------------
+ 
+ 
+----------------------------------------------------------------------
+LP382F.ZIP              Date Issued - April 12, 1993
+Author: Ken Borgedale   IBM Boca Raton, FL
+ 
+Version 2.2d -  12 April 1993
+ 
+These fonts give a basic set of Times, Helvetica, and Letter Gothic
+fonts for use with lp3820 on printers which do not support scalable
+fonts.  These fonts are needed when running lp3820 in HP-PCL or
+4019 PPDS modes.  They are not needed when running lp3820 in
+PostScript or 4029 PPDS modes.
+ 
+----------------------------------------------------------------------
+ 
+APING.ZIP                 Date Issued - August 5, 1992
+                            Latest Release - April 8,1993
+Author: Peter J. Schwaller IBM Research Triangle Park, NC.
+ 
+APING is a CPI-C program that should be the first program you configure and
+run when first configuring APPC on your computer.  APING exchanges data
+packets with a partner computer, and times how long the data transfer takes.
+It can be used to get a coarse measure of the session setup time between two
+computers, and the throughput and turnaround time on that APPC session.
+APING can be used to determine whether a session can be set up between two
+computers, and will display extensive error information if session allocation
+fails.
+ 
+---------------------------------------------------------------------------
+ 
+ATELL.ZIP                 Date Issued - August 5, 1992
+                             Latest Release - April 8, 1993
+Author: Peter J. Schwaller IBM Research Triangle Park, NC.
+ 
+ATELL is a sample program that allows a workstation user to send a message to
+another workstation.  ATELL is written in the C language and uses the IBM SAA
+Common Programming Interface for Communications (CPI-C).
+ 
+---------------------------------------------------------------------------
+ 
+AREXEC.ZIP                Date Issued - August 5, 1992
+                             Latest Release - April 8, 1993
+Author: Peter J. Schwaller IBM Research Triangle Park, NC.
+ 
+APPC Remote EXECution.  AREXEC allows you to execute any single command line
+on a remote workstation.  All output of the command that goes to stdout or
+stderr will be routed to your screen.  Full screen programs or programs that
+require user input will not work properly with AREXEC.
+ 
+ 
+---------------------------------------------------------------------------
+CBOOK.ZIP                       Date Issued - April 8, 1993
+Author: Patrick Mueller    IBM  Cary, N.C.
+ 
+ 
+cBook - C language file formatter for BookMaster
+ 
+cBook reads C source files and produces output suitable for BookMaster 1.3.
+(BookMaster is an IBM mainframe (CMS and MVS) document formatting system).
+ 
+Besides applying various fonts and sizes to the C source, cBook provides
+function cross reference information in BookMaster tables.
+ 
+---------------------------------------------------------------------------
+ELEP2F.ZIP                      Date Issued - April 8, 1993
+Author: Kenneth Kahn      IBM Poughkeepsie, NY
+ 
+ELEP2, "OS/2 Entry Level 3270 Emulation Program", is a CUT Mode 3270 Emulator
+that runs in OS/2 VIO Window or FullScreen Protect Mode sessions.  It supports
+file transfers, both Download and Upload, via the IND$FILE protocol.  It can
+emulate the following terminal devices:  Model-2 (24x80), Model-3 (32x80),
+Model-4 (43x80) or Model-5 (27x132).  It can be loaded and run from an OS/2
+BOOT Disk.
+ 
+--------------------------------------------------------------------------
+LOADDF.ZIP                      Date Issued - April 8, 1993
+Author: Tom Cooper                 IBM Boulder, CO
+ 
+   SaveDskF.exe and LoadDskF.exe are a pair of utilities to save a diskette
+to a file and vice-versa. SaveDskF.exe can be used to capture an image of a
+diskette into a file. The file can be transported somewhere and with
+LoadDskF.exe be reconstructed into the original diskette. This can be handy
+for electronically sending bootable diskettes. Data compression is used and only
+the data neccessary to reconstruct the used portion of the diskette is stored.
+If you choose, you may include a text description of the diskette to be included
+in the diskette image file.
+ 
+This set of utility programs will run on a wide variety of operating systems.
+DOS 3.3 or later; OS/2 1.x; and OS/2 2.x.
+ 
+These programs are not intended to save fixed disk images. All standard FAT
+diskette formats are supported.
+ 
+--------------------------------------------------------------------------
+PMFTRM.ZIP               Original Date Issued - July 16, 1992
+                         Latest Release Date - March 23, 1993 (Ver 1.5)
+Author: Steve Blunden, IBM New Haven CN.
+ 
+Async Terminal program for OS/2.
+ 
+PMFTERM provides ANSI, DEC VT100(R), TTY line mode and FTTERMC asynchronous
+emulation for OS/2 1.2, 1.3 and 2.0+ without CM or ES.  File transfer for
+IND$FILE via 3708/7171 or XMODEM for others.  Logon scripting provided
+including special escape characters, CIS logon, IBM NSC BBS logon script etc.
+Command line interface to SEND/RECEIVE for all F/T types.  Full hypertext
+help.  COPY from and PASTE (!!!) TO emulation sessions (ie. from an
+editor session).  COM1-COM4 support, run as many PMFTERM's concurrently
+as you have COM ports!  Just add COM01/COM02/COM.SYS to CONFIG.SYS and
+talk to the world...and still use your computer while you do it!
+ 
+Release History
+---------------
+ 
+Release 1.2  Initial release of PMFTERM
+ 
+Release 1.5  2/11/93
+ 
+            Fixed problem with TSO where screen was cleared
+            before entering IND$FILE command.
+ 
+            Fixed problems with IND$FILE and 3174 AEA.
+ 
+            Added support in FTTERMC for Host Directed Print.
+            Output is sent to the spooler default printer, which
+            is assumed to be IBM4201 data stream compatible.
+ 
+            Fixed ATTN key (Alt+F5).
+ 
+            Fixed cursor in the middle of fonts larger than 10 high.
+ 
+---------------------------------------------------------------------------
+CPOST.ZIP                 Date Issued - March 23, 1993
+Author: Patrick Mueller    IBM  Cary, N.C.
+ 
+cPost - C language file formatter for PostScript
+ 
+cBook reads C source files and produces output suitable for PostScript
+printers and interpreters.
+ 
+Arbitrary PostScript fonts (and sizes) may be applied to various types
+of tokens in the C source.
+ 
+version  1.2 - Feb 17 1993
+   - fix to make 'i' and 'd' fonts work (for good this time!)
+   - change Courier-Italic to Courier-Oblique
+ 
+version  1.1 - Feb 15 1993
+   - fix tab handling problem (thanks to Art Roberts for this)
+   - fix to make 'i' and 'd' fonts work
+   - don't echo command line parameters into output file anymore
+   - allow '@' file specs for -k and file names.
+ 
+version  1.0 - Feb  2 1993
+   - a few bug fixes, a few added diagnostics
+   - function definitions (can) now use different font than other
+     function tokens (usage and prototype).
+   - font for identifiers separated from 'n'ormal text
+   - added the -r option and -w option
+ 
+version  0.3 - Jan 18 1993
+ 
+   - configuration via imbed files with -i options
+   - all options added (most from cBook)
+   - added linefeed at end of file to prevent last line from not being
+     processed
+ 
+version  0.2
+ 
+   - lots of little fixes
+ 
+version  0.1
+ 
+   - initial version
+ 
+---------------------------------------------------------------------------
+AUTODI.ZIP               Date Issued - March 23, 1993
+Author: Richard L. Gray   IBM Owego, New York
+ 
+AUTODISP provdies a graphical display of the following APPN resources as
+bar charts on a percentile scale:
+  Sessions              - Number of sessions having an endpoint at this node.
+  Links                 - Number of links between this and other nodes.
+  Transaction Programs  - Number of active transaction programs at this node.
+  Data Base Entries     - Number of data base entries at this node.
+  Network Nodes         - Number of network nodes in this network.
+  Intermediate Sessions - Number of sessions routed through this node.
+Great for demos, testing, and keeping status on a network node.
+ 
+ 
+---------------------------------------------------------------------------
+RXD.ZIP                   Date Issued - February 15, 1993
+Author: Patrick Mueller   IBM Cary, N.C.
+ 
+RXD is a Presentation Manager source level debugger for Rexx programs.
+It features breakpoints, single stepping, 'watch' variables display,
+and a console input/output display.
+ 
+---------------------------------------------------------------------------
+ 
+PMCAM2.ZIP                Date Issued - February 15, 1993
+Author: Juerg von Kaenel  IBM Yorktown Research Center, N.Y.
+ 
+PM Camera /2 has the ability to take screen shots of OS/2 Presentation Manager
+screens, screen parts  or active  windows.  The pictures taken may be saved in
+OS/2 BMP (1.1) file format, PSEG38PP, PostScript  and  Encapsulated PostScript
+format. Additionally  it may also  be put into the Clipboard  for use by other
+applications.
+ 
+----------------------------------------------------------------------
+ 
+RXMATH.ZIP                Date Issued - December 02, 1992
+Author: Patrick J. Mueller IBM Cary N. C.
+ 
+The following math functions are provided:  cos(x), sin(x), tan(x),
+acos(x), asin(x), atan(x), cosh(x), sinh(x), tanh(x), ceil(x),
+floor(x), exp(x), log(x), log10(x), sqrt(x), pow(x,y), pi(), e().
+Note that these functions are a subset of those available with the C
+Set/2 compiler.  All trigonometric functions deal with radians.
+---------------------------------------------------------------------------
+ 
+PRNTPS.ZIP                Date Issued - November 10, 1992
+Author: Mike Perks        IBM Boca Raton.
+ 
+This is a simple program written in REXX which allows you to print a text
+file on a Postscript capable printer. The command format is:
+ 
+   PRINTPS <filename>
+ 
+where <filename> is the name of the file you want to print.
+ 
+You can edit PRINTPS.CMD to change the following items:
+ 
+ printer port                  output = 'LPT1'
+ number of line on a page      numlines = 80
+ size of the page              pagelength = 792   (11 inches)
+ top margin                    topmargin = 36     (0.5 inch)
+ bottom margin                 bottommargin = 36  (0.5 inch)
+ left-hand side margin         leftmargin = 54    (0.75 inch)
+ 
+---------------------------------------------------------------------------
+ 
+RXAPPC.ZIP                Date Issued - November 9, 1992
+Author: Sam Detweiler Jr. IBM Detroit Michigan.
+ 
+        REXX/APPC Function interface Package
+ 
+        This package provides access to the OS/2
+        Communications Manager APPC Application
+        Programming Interface from REXX programs.
+ 
+        This provides a fast and simple way to
+        learn APPC and to build communications pgms.
+ 
+        The sample pgms TP1 (Client) and TP2 (Server)
+        can be located at any OS/2 APPC enabled system
+ 
+---------------------------------------------------------------------------
+ 
+RXNETB.ZIP                Date Issued - November 6, 1992
+Author: Sam Detweiler Jr. IBM Detroit Michigan.
+ 
+        REXX/NETBIOS Function interface Package
+ 
+        This package provides access to the OS/2
+        NETBIOS Application Programming Interface
+        from REXX programs.
+ 
+        This provides a fast and simple way to
+        learn NETBIOS and to build communications pgms.
+ 
+        The sample pgms TESTS (Client) and  TESTR (Server)
+        can be located at any OS/2 NETBIOS enabled system
+ 
+---------------------------------------------------------------------------
+ 
+EDTINI.ZIP                Date Issued - October 3, 1992
+Author: Gunnar P. Seaburg IBM Houston Texas.
+ 
+The EDITINI program is a simple editor which can be used to view
+and change text entries in the OS2.INI and OS2SYS.INI keyed
+files.  The OS2.INI and OS2SYS.INI files provide a convenient
+place for programs to store profile information.  However, these
+files are stored in binary form and therefore cannot be readily
+viewed without a special program.  That's why EDITINI was
+created.
+ 
+EDITINI can be used to view text entries in the OS2.INI and
+OS2SYS.INI profiles, and it also provides the ability to change
+or delete entries if desired.  (EDITINI does not provide binary
+data editing capability.)
+ 
+---------------------------------------------------------------------------
+ 
+VREXX2.ZIP                Date Issued - September 24, 1992
+Author: Richard B. Lam    IBM T.J. Watson Research Center
+ 
+   VREXX is Visual REXX for OS/2 Presentation Manager!  VREXX is a library of
+OS/2 2.0 REXX functions that will give your REXX programs a PM interface.  And
+you DO NOT need to know anything about PM programming!
+ 
+   VREXX includes functions for creating windows, drawing graphics, displaying
+text in multiple fonts, and displaying dialog boxes.  Dialogs are available
+for filename selection, font and color selection, string input, and message
+display.  Other dialogs allow presentation and selection of options through
+listbox, table, radiobutton and checkbox dialogs.
+ 
+   On-line help is included, along with some sample REXX programs that show how
+easy it is to add windows and dialogs to Your REXX programs.
+ 
+---------------------------------------------------------------------------
+HEXDMP.ZIP                Date Issued - September 1, 1992
+Author: Joe Nord          IBM Boca Raton, FL.
+ 
+A binary data display and conversion utility, hexdump supports both bin2hex
+and hex2bin functionality.  'bin2hex' is pretty self-explainatory.
+For 'hex2bin' (-r), hexdump searches the input stream for "nibbles"
+converting each pair to a binary output byte.  To facilitate small changes
+to binary files, input hex format is compatible with hexdump displayed hex and
+characters following a '*' on a line are ignored (for comments).
+ 
+---------------------------------------------------------------------------
+ 
+DBMRPW.ZIP                Date Issued - September 1, 1992
+Author: James Wangler     IBM Austin, TX.
+ 
+  REMOTE PASSWORD ADMINISTRATION UTILITY
+  For Client-to-Server-to-Host Password Updates
+ 
+  This is for EXTENDED SERVICES 1.0 (ES 1.0)
+ 
+  PURPOSE:  This utility is intended for use with the OS/2 Database
+            Manager, while running a Server and Client(s) arrangement
+            without the use of the OS/2 LAN Server program.
+ 
+            The problem to be solved is: how does a user on a client
+            machine update the password access on the server, for
+            a particular user-id.  In addition, if a host session(s)
+            is provided and active on the server, how does a user on a
+            client machine update the password access on the host
+            session(s). The problem is physical access to the
+            server is very difficult or virtually impossible, due to
+            distance or security access.
+ 
+            This utility allows a user on a client machine to update
+            the password access on the server, for a particular
+            user-id.  In addition, if a host session(s) is provided
+            and active on the server, this utility allows a user on a
+            client machine to update the password access on the host
+            session(s), all without having physical access to the server.
+ 
+ 
+---------------------------------------------------------------------------
+DINFO.ZIP                 Date Issued - August 21, 1992
+Author: N. Malte Christensen, IBM DENMARK
+ 
+A small program that sits on your desktop on monitors your SWAP file and
+free space on the SWAP drive. Alarms can be set to alert you to SWAPPER.DAT
+growth and you can also set an alarm to specific FREE SPACE values.
+ 
+---------------------------------------------------------------------------
+PMTREE.ZIP                Date Issued - August 18, 1992
+Author: Donald Hobern     IBM Boca Raton, FL
+ 
+PMTREE is an application for examination of and interaction with the
+windows of an OS/2 system.  It presents a graphical display of all a
+window hierarchy, allowing navigation according to the relationships
+between the windows.  Many characteristics of the windows may be
+displayed or queried. In many cases the windows may also be modified.
+The application also allows the user to post or send PM messages to
+any window in the system.
+ 
+---------------------------------------------------------------------------
+ 
+IPFCPP.ZIP                Date Issued - July 16, 1992
+Author: Doug Haigh, IBM Raleigh, N. C.
+ 
+IPFC Preprocessor.
+ 
+IPFC Preprocessor is tool to expand the capabilities of the IPF Compiler.  It
+provides additional function for the IPF Compiler that are necessary for both
+single sourcing online documentation & hardcopy books (using BookMaster), and
+single sourcing of symbols for the developer and help panel writer.  IPFC
+Preprocessor allows you to define symbols, create conditionally compiled
+sections of documents, include C language symbols (using #define) in help
+panels, create simple text macros (tags), and resolves searches for imbedded
+files and bitmaps to other directories.
+ 
+---------------------------------------------------------------------------

@@ -1,0 +1,64 @@
+
+
+// Feature source code generation begins here...
+INotificationId RBMgr::previousButtonId = "RBMgr::previousButton";
+INotificationId RBMgr::currentButtonId = "RBMgr::currentButton";
+INotificationId RBMgr::previousButtonAsStringId = "RBMgr::previousButtonAsString";
+INotificationId RBMgr::currentButtonAsStringId = "RBMgr::currentButtonAsString";
+
+long RBMgr::previousButton() const
+{
+  return iPreviousButton;
+}
+
+RBMgr& RBMgr::setPreviousButton(long aPreviousButton)
+{
+  if (!(iPreviousButton == aPreviousButton))
+  {
+    if( bStarted )
+    {
+      iPreviousButton = aPreviousButton;
+      notifyObservers(INotificationEvent(RBMgr::previousButtonId, *this));
+    } /* endif */
+  } // endif
+  return *this;
+}
+
+long RBMgr::currentButton() const
+{
+  return iCurrentButton;
+}
+
+RBMgr& RBMgr::setCurrentButton(long aCurrentButton)
+{
+  if (!(iCurrentButton == aCurrentButton))
+  {
+    if( bStarted )
+    {
+      setPreviousButton( iCurrentButton );
+      iCurrentButton = aCurrentButton;
+      notifyObservers(INotificationEvent(RBMgr::currentButtonId, *this));
+    } /* endif */
+  } // endif
+  return *this;
+}
+
+IString RBMgr::previousButtonAsString() const
+{
+  return IString( iPreviousButton );
+}
+
+IString RBMgr::currentButtonAsString() const
+{
+  return IString( iCurrentButton );
+}
+
+RBMgr& RBMgr::startHandlingEvents()
+{
+  iPreviousButton = -1;
+  iCurrentButton = 0;
+  bStarted = true;
+  return *this;
+}
+
+// Feature source code generation ends here.

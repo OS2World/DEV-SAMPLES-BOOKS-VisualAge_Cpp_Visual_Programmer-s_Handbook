@@ -1,0 +1,9 @@
+IPFC Preprocessor is tool to expand the capabilities of the IPF Compiler.  It 
+provides additional function for the IPF Compiler that are necessary for both
+single sourcing online documentation & hardcopy books (using BookMaster), and 
+single sourcing of symbols for the developer and help panel writer.  IPFC 
+Preprocessor allows you to define symbols, create conditionally compiled 
+sections of documents, include C language symbols (using #define) in help 
+panels, create simple text macros (tags), and resolves searches for imbedded 
+files and bitmaps to other directories. 
+

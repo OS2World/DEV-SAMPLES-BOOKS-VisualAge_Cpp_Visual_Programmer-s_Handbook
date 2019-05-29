@@ -1,0 +1,171 @@
+
+
+// Feature source code generation begins here...
+INotificationId LeaseCalc::todayId = "LeaseCalc::today";
+INotificationId LeaseCalc::differenceId = "LeaseCalc::difference";
+INotificationId LeaseCalc::odometerReadingId = "LeaseCalc::odometerReading";
+INotificationId LeaseCalc::differenceColorId = "LeaseCalc::differenceColor";
+INotificationId LeaseCalc::freeDistanceToDateId = "LeaseCalc::freeDistanceToDate";
+INotificationId LeaseCalc::leaseStartDateId = "LeaseCalc::leaseStartDate";
+INotificationId LeaseCalc::extraCostId = "LeaseCalc::extraCost";
+INotificationId LeaseCalc::freeDistancePerYearId = "LeaseCalc::freeDistancePerYear";
+
+IDate LeaseCalc::today() const
+{
+  return iToday;
+}
+
+LeaseCalc& LeaseCalc::setToday(const IDate& aToday)
+{
+  if (!(iToday == aToday))
+  {
+    iToday = aToday;
+    notifyObservers(INotificationEvent(LeaseCalc::todayId, *this));
+  } // endif
+  return *this;
+}
+
+int LeaseCalc::difference() const
+{
+  return iDifference;
+}
+
+int LeaseCalc::odometerReading() const
+{
+  return iOdometerReading;
+}
+
+LeaseCalc& LeaseCalc::setOdometerReading(int aOdometerReading)
+{
+  iOdometerReading = aOdometerReading;
+  notifyObservers(INotificationEvent(LeaseCalc::odometerReadingId, *this));
+
+  iDifference = iFreeDistanceToDate - iOdometerReading;
+  notifyObservers(INotificationEvent(LeaseCalc::differenceId, *this));
+
+  if( ( iDifference ) < 0 )
+  {
+    setDifferenceColor( IColor::red );
+  }
+  else
+  {
+    setDifferenceColor( IColor::darkGreen );
+  }
+
+  return *this;
+}
+
+IColor LeaseCalc::differenceColor() const
+{
+  return iDifferenceColor;
+}
+
+LeaseCalc& LeaseCalc::setDifferenceColor(const IColor& aDifferenceColor)
+{
+  if (!(iDifferenceColor == aDifferenceColor))
+  {
+    iDifferenceColor = aDifferenceColor;
+    notifyObservers(INotificationEvent(LeaseCalc::differenceColorId, *this));
+  } // endif
+  return *this;
+}
+
+int LeaseCalc::freeDistanceToDate() const
+{
+  return iFreeDistanceToDate;
+}
+
+
+IDate LeaseCalc::leaseStartDate() const
+{
+  return iLeaseStartDate;
+}
+
+LeaseCalc& LeaseCalc::setLeaseStartDate(const IDate& aLeaseStartDate)
+{
+  if (!(iLeaseStartDate == aLeaseStartDate))
+  {
+    iLeaseStartDate = aLeaseStartDate;
+    notifyObservers(INotificationEvent(LeaseCalc::leaseStartDateId, *this));
+
+    long lDaysElapsed = iToday - iLeaseStartDate;
+    long lDistancePerDay = freeDistancePerYear() / 365;
+
+    ITRACE_DEVELOP( "Distance allotted: "  + IString(freeDistancePerYear()) );
+    ITRACE_DEVELOP( "Today: "  + iToday.asString() );
+    ITRACE_DEVELOP( "Lease start date: "  + iLeaseStartDate.asString() );
+    ITRACE_DEVELOP( "Distance per day = "  + IString(lDistancePerDay ) );
+    ITRACE_DEVELOP( "Days elapsed = "  + IString(lDaysElapsed ) );
+
+
+    iFreeDistanceToDate = lDistancePerDay * lDaysElapsed;
+    notifyObservers(INotificationEvent(LeaseCalc::freeDistanceToDateId, *this));
+  } // endif
+  return *this;
+}
+
+int LeaseCalc::extraCost() const
+{
+  return iExtraCost;
+}
+
+LeaseCalc& LeaseCalc::setExtraCost(int aExtraCost)
+{
+  if (!(iExtraCost == aExtraCost))
+  {
+    iExtraCost = aExtraCost;
+    notifyObservers(INotificationEvent(LeaseCalc::extraCostId, *this));
+  } // endif
+  return *this;
+}
+
+int LeaseCalc::freeDistancePerYear() const
+{
+  return iFreeDistancePerYear;
+}
+
+LeaseCalc& LeaseCalc::setFreeDistancePerYear(int aFreeDistancePerYear)
+{
+  if (!(iFreeDistancePerYear == aFreeDistancePerYear))
+  {
+    iFreeDistancePerYear = aFreeDistancePerYear;
+    notifyObservers(INotificationEvent(LeaseCalc::freeDistancePerYearId, *this));
+  } // endif
+  return *this;
+}
+
+IString LeaseCalc::calculateAmountOwing()
+{
+   IFUNCTRACE_DEVELOP();
+
+   IString strAmountOwing;
+   double dAmountOwing;
+
+   int aDifference = difference();
+
+   if( aDifference < 0 )
+   {
+      aDifference *= -1; // change the sign
+      double dDollarsOwing = aDifference * iExtraCost / 100 * 100;
+      double dCentsOwing   = ( aDifference * iExtraCost ) - dDollarsOwing;
+
+      IString strCentsOwing( dCentsOwing );
+
+      if( strCentsOwing.length() == 1 )
+      {
+         strCentsOwing += "0";
+      } /* endif */
+
+      strAmountOwing = ( "$ " + IString( dDollarsOwing / 100 )
+                       + "." + strCentsOwing );
+   }
+   else
+   {
+      strAmountOwing = "$ 0.00";
+   } /* endif */
+
+  return strAmountOwing;
+}
+
+// Feature source code generation ends here.
+

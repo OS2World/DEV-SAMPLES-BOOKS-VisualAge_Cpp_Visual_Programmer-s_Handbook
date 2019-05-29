@@ -1,0 +1,36 @@
+
+
+// Feature source code generation begins here...
+INotificationId IsStringEmpty::textId = "IsStringEmpty::text";
+INotificationId IsStringEmpty::stringEmptyEventId = "IsStringEmpty::stringEmptyEvent";
+INotificationId IsStringEmpty::stringNotEmptyEventId = "IsStringEmpty::stringNotEmptyEvent";
+
+IString IsStringEmpty::text() const
+{
+  return iText;
+}
+
+IsStringEmpty& IsStringEmpty::setText(const IString& aText)
+{
+  if (!(iText == aText))
+  {
+    iText = aText;
+    notifyObservers(INotificationEvent(IsStringEmpty::textId, *this));
+  } // endif
+  return *this;
+}
+
+int IsStringEmpty::checkIfEmpty()
+{
+  if(iText.strip().length() == 0)
+  {
+    notifyObservers(INotificationEvent(IsStringEmpty::stringEmptyEventId, *this));
+  }
+  else
+  {
+    notifyObservers(INotificationEvent(IsStringEmpty::stringNotEmptyEventId, *this));
+  }
+  return 0;
+}
+
+// Feature source code generation ends here.

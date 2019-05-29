@@ -1,0 +1,24 @@
+
+
+// Feature source code generation begins here...
+public:
+  IString phoneAsString() const;
+  PhoneParser& setPhoneAsString(const IString& aAsString);
+  IString areaCode() const;
+  PhoneParser& setAreaCode(const IString& aAreaCode);
+  IString prefix() const;
+  PhoneParser& setPrefix(const IString& aPrefix);
+  IString number() const;
+  PhoneParser& setNumber(const IString& aNumber);
+
+  static INotificationId areaCodeId;
+  static INotificationId prefixId;
+  static INotificationId numberId;
+  static INotificationId phoneAsStringId;
+
+private:
+  IString iAreaCode;
+  IString iPrefix;
+  IString iNumber;
+  IString iPhoneAsString;
+// Feature source code generation ends here.

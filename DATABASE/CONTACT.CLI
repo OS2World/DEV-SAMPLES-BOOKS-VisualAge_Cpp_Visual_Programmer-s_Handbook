@@ -1,0 +1,18 @@
+connect to contact;
+
+create table USERID.contact(name varchar(20) not null, area integer, updated char(8), phone char(13), primary key(Name));
+
+LOAD FROM CONTACT.DTA OF ASC METHOD L (1 17, 20 21, 24 31, 35 47) INSERT INTO USERID.CONTACT (NAME, AREA, UPDATED, PHONE);
+
+create table USERID.areatabl(areanum integer not null, city varchar(16), state varchar(3), primary key(areanum));
+
+LOAD FROM CONTAREA.DTA OF ASC METHOD L (1 2, 5 20, 24 26) INSERT INTO USERID.AREATABL (AREANUM, CITY, STATE);
+
+create view USERID.contview (name, phone, city, state, updated) as select all name, phone, city, state, updated from USERID.contact, USERID.areatabl where Area=areanum;
+
+commit;
+
+grant bindadd on database to public;
+
+connect reset;
+

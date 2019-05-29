@@ -1,0 +1,9 @@
+
+
+// Feature source code generation begins here...
+public:
+  virtual int refreshRequired();
+
+  static const INotificationId refreshRequiredEventId;
+
+// Feature source code generation ends here.

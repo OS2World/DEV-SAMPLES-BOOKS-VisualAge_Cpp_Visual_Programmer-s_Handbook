@@ -1,0 +1,26 @@
+
+
+// Feature source code generation begins here...
+public:
+  virtual IString fileName() const;
+  virtual FlatFile& setFileName(const IString& aFileName);
+  virtual IString currentLine() const;
+  virtual FlatFile& setCurrentLine(const IString& aCurrentLine);
+  FlatFile& close();
+  FlatFile& open(IString newFileName = IString());
+  FlatFile& readFile();
+  FlatFile& readLine();
+  FlatFile& writeLine(IString aLine);
+
+  static INotificationId fileNameId;
+  static INotificationId currentLineId;
+  static INotificationId endOfFileId;
+  static INotificationId openedId;
+
+private:
+  IString iFileName;
+  IString iCurrentLine;
+  fstream aFile;
+  Boolean aFileIsOpen;
+  Boolean eofReached;
+// Feature source code generation ends here.

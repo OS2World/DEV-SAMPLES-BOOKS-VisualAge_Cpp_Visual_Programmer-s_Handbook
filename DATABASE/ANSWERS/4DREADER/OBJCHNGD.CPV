@@ -1,0 +1,38 @@
+
+
+// Feature source code generation begins here...
+INotificationId GenerateObjectChangedEvent::counterId = "GenerateObjectChangedEvent::counter";
+INotificationId GenerateObjectChangedEvent::objectChangedEventId = "GenerateObjectChangedEvent::objectChangedEvent";
+
+int GenerateObjectChangedEvent::counter() const
+{
+  return iCounter;
+}
+
+GenerateObjectChangedEvent& GenerateObjectChangedEvent::setCounter(int aCounter)
+{
+  if (!(iCounter == aCounter))
+  {
+    iCounter = aCounter;
+    notifyObservers(INotificationEvent(GenerateObjectChangedEvent::counterId, *this));
+  } // endif
+  return *this;
+}
+
+int GenerateObjectChangedEvent::sampleNow()
+{
+  ITRACE_DEVELOP( "Change count is: " + IString( iCounter ) );
+  if( iCounter > 0 )
+  {
+    notifyObservers(INotificationEvent(GenerateObjectChangedEvent::objectChangedEventId, *this));
+  } /* endif */
+  return 0;
+}
+
+int GenerateObjectChangedEvent::objectChanged()
+{
+  setCounter( ++ iCounter );
+  return 0;
+}
+
+// Feature source code generation ends here.

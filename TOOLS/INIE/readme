@@ -1,0 +1,56 @@
+How to get currently open profiles to appear in the Open File dialog
+--------------------------------------------------------------------
+
+If you are running a version of OS/2 which is 2.11 or later you will
+notice that OS2.INI and OS2SYS.INI do not appear in the open file dialog
+of INIE when you switch to the OS2 directory of your boot drive. This is
+because OS/2 versions 2.11 and later turn on the SYSTEM file
+attribute of profiles when they are open and the standard OS/2 file
+dialog does not find SYSTEM files in its search.  OS2.INI and OS2SYS.INI
+are always open when OS/2 is running thus they are marked as SYSTEM and
+are not found.
+
+In the past I have shipped patched versions of PMCTLS.DLL in the INIE
+package.  PMCTLS.DLL is the DLL where the standard file dialog box
+lives.  The patch involved changing the attribute byte in the parameters
+of the search to include SYSTEM files.  There are more versions of OS/2
+floating around now, so instead of shipping a PMCTLS.DLL for every one,
+I am now just going to tell you how to use PATCH to make your own
+patched version.
+
+
+OS/2 version        filesize      offset       change from   change to
+-----------------   --------   -------------   -----------   ---------
+2.11                  330651       46BE7           10           14
+Warp 3.0*             432772       5D34A           10           14
+Warp Connect 3.0      432772       5D34A           10           14
+Warp + FixPak 9       433494       5D7F1           10           14
+
+
+* Note: Warp 3.0 means both plain and "with WIN-OS2" versions
+
+
+First, PMCTLS.DLL is a locked file so you just can't change it on the
+fly.  Copy PMCTLS.DLL to PMCTLS.NEW and run patch on the new file by
+typing the following:
+and typing:
+
+CD \OS2\DLL
+COPY PMCTLS.DLL PMCTLS.NEW
+PATCH PMCTLS.NEW
+
+Use the table above to figure out at which offset to make the change.
+Type in your change and hit enter.  PATCH will then ask if you want
+to continue patching and you should answer N.  Then it will ask if
+you want to write your changes to which you should answer Y.
+
+The easiest way to replace the DLL with the new patched one is to use
+REPMOD which is also available from OS2TOOLS.  REPMOD will copy the new
+file over the old, so you might want to save a backup copy of the
+original.  In the OS2\DLL directory just type:
+
+COPY PMCTLS.DLL PMCTLS.BAK
+REPMOD PMCTLS.NEW PMCTLS
+
+Then reboot and you will see system files in your Open File dialogs.
+

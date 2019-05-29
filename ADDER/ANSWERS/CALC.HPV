@@ -1,0 +1,21 @@
+
+
+// Feature source code generation begins here...
+public:
+  virtual int num1() const;
+  virtual Calc& setNum1(int aNum1);
+  virtual int num2() const;
+  virtual Calc& setNum2(int aNum2);
+  virtual int result() const;
+  virtual Calc& setResult(int aResult);
+  Calc& add();
+
+  static INotificationId num1Id;
+  static INotificationId num2Id;
+  static INotificationId resultId;
+
+private:
+  int iNum1;
+  int iNum2;
+  int iResult;
+// Feature source code generation ends here.

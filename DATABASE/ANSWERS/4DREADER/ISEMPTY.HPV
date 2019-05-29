@@ -1,0 +1,15 @@
+
+
+// Feature source code generation begins here...
+public:
+  virtual IString text() const;
+  virtual IsStringEmpty& setText(const IString& aText);
+  virtual int checkIfEmpty();
+
+  static INotificationId textId;
+  static INotificationId stringEmptyEventId;
+  static INotificationId stringNotEmptyEventId;
+
+private:
+  IString iText;
+// Feature source code generation ends here.

@@ -1,0 +1,24 @@
+
+GFC is a graphical file comparison program. It compares two files on disk and
+notes lines that are common to both. A bar chart is drawn, giving an overall
+view of which lines match, and the text of either file, or a composite file,
+is displayed. The default view is the composite file.
+
+Standard clipboard functions can be used for simple editing of the composite
+file, which may also be saved.
+
+GFC recognises UNIX-style files (i.e. files using just a
+newline character to mark the end of a line, rather than OS/2's
+carriage return - newline combination).
+
+GFC can ignore case and white space, if you wish.
+
+GFC.EXE should be placed in a directory in your PATH environment variable;
+GFC.HLP in a directory in your HELP environment variable.
+
+GFC should be invoked as:
+
+  GFC <file1 file2>
+
+Your attention is drawn to the license agreement LICENSE.TXT in this package.
+

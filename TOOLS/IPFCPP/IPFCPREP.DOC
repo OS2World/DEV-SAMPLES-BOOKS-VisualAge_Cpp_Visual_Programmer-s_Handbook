@@ -1,0 +1,599 @@
+
+
+
+
+
+
+
+
+
+
+
+
+                                INFORMATION PRESENTATION FACILITY PREPROCESSOR
+                                                      (C) IBM CORPORATION 1992
+                                                                   VERSION 1.0
+
+
+
+
+
+
+
+                                                                 June 30, 1992
+
+
+                                                                    Doug Haigh
+
+
+                                                               IBM Corporation
+
+
+
+
+
+
+
+
+ Contents
+
+
+
+
+
+ 1.0 OVERVIEW   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  3
+ 1.1  What IPFCPREP does for you.   . . . . . . . . . . . . . . . . . . . .  3
+ 1.2  Running IPFCPREP  . . . . . . . . . . . . . . . . . . . . . . . . . .  3
+   1.2.1  Examples  . . . . . . . . . . . . . . . . . . . . . . . . . . . .  4
+
+ 2.0 REFERENCE  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  5
+ 2.1  Imbedding Files from Other Subdirectories   . . . . . . . . . . . . .  5
+   2.1.1  Example   . . . . . . . . . . . . . . . . . . . . . . . . . . . .  5
+ 2.2  Defining Symbols  . . . . . . . . . . . . . . . . . . . . . . . . . .  5
+   2.2.1  Examples  . . . . . . . . . . . . . . . . . . . . . . . . . . . .  5
+ 2.3  Using C Language define files   . . . . . . . . . . . . . . . . . . .  6
+   2.3.1  Example   . . . . . . . . . . . . . . . . . . . . . . . . . . . .  7
+ 2.4  Using Bookmaster 1.0 Vanilla conditional compiles   . . . . . . . . .  7
+   2.4.1  Example   . . . . . . . . . . . . . . . . . . . . . . . . . . . .  8
+ 2.5  Using Simple Macros   . . . . . . . . . . . . . . . . . . . . . . . .  8
+   2.5.1  Example   . . . . . . . . . . . . . . . . . . . . . . . . . . . .  9
+ 2.6  Using Simple Macros that can be used in BookMaster  . . . . . . . . .  9
+   2.6.1  Example   . . . . . . . . . . . . . . . . . . . . . . . . . . .   10
+ 2.7  Using Positional Parameters on Macros   . . . . . . . . . . . . . .   11
+   2.7.1  Example   . . . . . . . . . . . . . . . . . . . . . . . . . . .   11
+
+
+
+
+ 1.0  Overview
+
+
+
+
+
+ 1.1  What IPFCPREP does for you.
+
+ o   Allows you to have IPFC script files in different subdirectories.
+
+     The IPFCPREP program will look at the INCLUDE environment variable as it
+     processes the imbed (.im) tags so that it can search more than the
+     current subdirectory for script files.
+
+ o   Allows you to define symbols.
+
+     The IPFCPREP program allows the use of BookMaster .nameit tags with the
+     symbol= and text= paramters.
+
+ o   Allows you to use C language header files to define symbols.
+
+     The IPFCPREP program will read in C language header files and use the
+     #define statements as BookMaster .nameit tags.
+
+ o   Allows you to have conditional compile sections
+
+     The IPFCPREP program supports BookMaster Vanilla conditional compiles.
+
+ o   Allows you to have simple substitution macros.
+
+     The IPFCPREP will support the .dm tag to define simple macros that are
+     used for text replacement only.  Either keyword or positional parameters
+     may be used.
+
+ o   Resolves bitmap file names to fully qualified path name.
+
+     Currently IPF requires the bitmap files be in the current directory.  If
+     multiple versions of a file are produced in different subdirectories, the
+     bitmaps must be copied into every subdirectory. IPFCPREP will resolve the
+     bitmap file's position using the INCLUDE environment variable and replace
+     the bitmap file's name with a fully qualified path name in the artwork
+     tag. It will also resolve the artwork linkfile's name.
+
+***************************************************************************
+ 1.2  Running IPFCPREP
+
+ To run the IPFC preprocessor, type on the command line
+
+ IPFCPREP input_file_name output_file_name [options]
+
+ NAME                DEFINITION
+
+ input_file_name     Input script file
+
+ output_file_name    Output script file
+
+ options             Preprocessing options
+
+   /V, -V, /v, OR -v   Flag to indicate you want lines printed out as they are
+                       read in
+
+   /W, -W, /w, OR -w   Flag to indicate you want additional warning messages.
+
+
+   /N, -N, /n, OR -n   Flag to indicate a symbol definition
+
+   /S, -S, /s, OR -s   Flag to indicate not to include system include files,
+                       i.e. files that are enclosed by '<' & '>'.
+
+   /D, -D, /d, OR -d   Flag to indicate a symbol definition of the form
+                       -D symbolname[=symbol_text] where
+
+     symbolname          Name of symbol to be defined
+
+     symbol_text         Text of defined symbol.
+
+                         This is optional.  If no symbol_text is defined, the
+                         symbol is put in the symbol table with no text
+                         (ex: for use on conditional compiles).  If text is
+                         defined, it can either be a single word or multiple
+                         words inclosed in single quotes.
+
+ 1.2.1  Examples
+
+ The following will preprocess the test.scr file into the test.ipf file.
+
+   ipfcprep test.scr test.ipf
+
+ The following will preprocess the test.scr file into the test.ipf file and
+ define one symbol called HOST.
+
+   ipfcprep test.scr test.ipf -D HOST
+
+ The following will preprocess the test.scr file into the test.ipf file and
+ define one symbol called HOST with the text Mainframe.
+
+   ipfcprep test.scr test.ipf -D HOST=MainFrame
+
+ The following will preprocess the test.scr file into the test.ipf file and
+ define one symbol called HOST with the text IBM Mainframe.
+
+   ipfcprep test.scr test.ipf -D HOST='IBM MainFrame'
+
+ The following will preprocess the test.scr file into the test.ipf file,
+ define one symbol called HOST with the text IBM Mainframe, and define a
+ symbol called PC
+
+   ipfcprep test.scr test.ipf -D HOST='IBM MainFrame' -D PC
+
+ The following will preprocess the test.scr file into the test.ipf file,
+ define one symbol called HOST with the text IBM Mainframe, define a symbol
+ called PC and turn on those annoying warning messages.
+
+   ipfcprep test.scr test.ipf -D HOST='IBM MainFrame' /D PC /W
+
+
+
+ 2.0  Reference
+
+
+
+
+***************************************************************************
+ 2.1  Imbedding Files from Other Subdirectories
+
+ To have the IPFC preprocessor pull in imbedded files from other subdirecto-
+ ries, set up the INCLUDE environment variable with the path(s) to search.
+
+ IPFCPREP will also resolve the bitmap name or linkfile name in an artwork tag
+ using the INCLUDE environment variable.  This can be turned off using the /N
+ switch on the command line.
+
+
+ 2.1.1  Example
+
+ After the include environment variable is set as shown by the following
+ command, the IPFCPREP will search the C:\HELPDIR1 & C:\HELPDIR2 subdirecto-
+ ries after checking the current subdirectory for an imbed file.
+
+   SET INCLUDE=C:\HELPDIR1;C:\HELPDIR2;
+
+ For artwork tags, resolving will make a artwork tag that looks like
+
+   :artwork name='IPFCPREP.BMP' linkfile='IPFCPREP.LNK'.
+
+ into a tag that looks like
+
+   :artwork name='C:\HELPDIR1\IPFCPREP.BMP' linkfile='C:\HELPDIR1\IPFCPREP.LNK'.
+
+
+***************************************************************************
+ 2.2  Defining Symbols
+
+ To define symbols, use the same method as in BookMaster with .nameit tags.
+ IPFCPREP does not allow the GMLTYPE or SIZE parameters however. If you want
+ those, you must create a simple macro described later.
+
+ To use the symbol in the file, put an ampersand (&) before the symbol and a
+ period (.) after it. The period after the symbol is required.
+
+ Symbols may be within symbols (nested symbols). The innermost symbol will be
+ resolved first and then the resulting text will be used to search for the
+ remaining symbol.
+
+ Currently, the maximum symbol size after everything is resolved is about 250
+ character bytes.
+
+
+ 2.2.1  Examples
+
+ The following line will create a symbol called goofy and a symbol called MM
+ with the text for the first being 'Goofy' and the second being 'Mickey
+ Mouse'.
+
+   .nameit symbol=goofy text='Goofy'
+   .nameit symbol=MM text='Mickey Mouse'
+
+ Now if those are used in the following sentences
+
+   I went to Disney World and saw &goofy. and &MM..
+
+ The text will come out like
+
+   I went to Disney World and saw Goofy and Mickey Mouse.
+
+ The following demonstrates the use of nested symbols.
+
+   .nameit symbol=mightm text='Mighty Mouse'
+   .nameit symbol=mickm text='Mickey Mouse'
+
+ Now if those are used in the following sentence
+
+   I went to Disney World and saw  &&mouse_name.m..
+
+ The text will come out like
+
+   I went to Disney World and saw Mickey Mouse.
+
+ when &mouse_name. is set to 'mick', or it will come out like
+
+   I went to Disney World and saw Mighty Mouse.
+
+ when &mouse_name. is set to 'might'.
+
+
+
+***************************************************************************
+ 2.3  Using C Language define files
+
+ To use symbols in a C language header files, you must use the .imd tag to
+ imbed the header file. Then all defines of the form
+
+   #define symbol_name integer_value
+
+ or
+
+   #define symbol_name "string"
+
+ or
+
+   #define symbol_name2 symbol_name1
+
+ or
+
+   #define symbol_name expression
+
+ will be put into the symbol table.
+
+ The integer version is mainly used in defining the resource id on a :h1. tag
+ so that you can have one file define your panel resource IDs.
+
+ The string version is used to define text symbols similar to .namemit tags.
+ Wherever symbol_name is used the string (without the double quotes) will be
+ substituted. This is useful in using the same string that is in a .MRI file
+ in the text for a help panel to eliminate differences.
+
+ The symbol set to another symbol is a method to assign the same value to two
+ different symbol names. If the value after a symbol name matches any previ-
+ ously defined symbol name (whether it be C #defines or .nameit tags) the
+ value of the previously defined symbol will be used.
+
+ The symbol set to an expression is commonly used in C header files to base
+ all symbols off of one with an offset such as the following:
+
+   #define START   1000
+   #define PANEL_1 (START + 1)
+   #define PANEL_2 (START + 2)
+
+ IPFCPREP will allow the +, -, *, and / operators. It will evaluate
+ expressions from left to right without regard to operator precedence. If you
+ want precedence, you can use parentheses.
+
+ This will also search all subdirectories defined by the INCLUDE environment
+ variable after searching the current directory for the specified file.
+
+ An include file can include other include files defined by the #include com-
+ piler directive. You can disable the including of system include files by
+ using the /S command line option. This will not include any #include file
+ that is enclosed in '< >'.
+
+ Currently, the maximum symbol size after everything is resolved is about 120
+ character bytes.
+
+
+
+ IPFCPREP now supports some compiler directives, namely, #ifdef and #ifndef.
+ IPFCPREP will determine if the symbol referenced by these lines exists or not
+ and process or not process the lines that follow. #else used with #ifdefs or
+ #ifndefs is also allowed.
+
+ IPFCPREP does not handle the #if or #elif lines currently due to IPFCPREP's
+ lack of logical expression evaluation. #else used with #if or #elif is
+ ignored also.
+
+
+ 2.3.1  Example
+
+ To include the 'test.h' C language define file in the document use the fol-
+ lowing line in the script file
+
+   .imd test.h
+
+ Now if the C header file had the statement
+
+   #define HELP_PANEL_1 100
+
+ And the script file contained the line
+
+   :h1 res=&HELP_PANEL_1..
+
+ The preprocessor will resolve it to
+
+   :h1 res=100.
+
+
+***************************************************************************
+ 2.4  Using Bookmaster 1.0 Vanilla conditional compiles
+
+ The best reference for this is the BookMaster document, but I will put a
+ short exerpt here.
+
+ The conditional compiles use two main tags, the .CONFIG & .WHEN tags.
+ .CONFIG tags start and end conditional compile sections and the .WHEN tags
+ instruct the preprocessor to insert or delete lines based on a conditions.
+
+ The .CONFIG tag looks like
+
+   .CONFIG config_name ON | OFF
+
+ The config_name is used to match the ON and OFF statements. Nested config
+ statements are allowed.
+
+ The .WHEN tag looks like
+
+   .WHEN 'condition-expression' INSERT | DELETE
+
+ The condition-expression is a symbol or group of symbols that are defined or
+ not defined to determine if the expression is TRUE. This may take the form of
+
+   'symbol1 symbol2 ... symboln'
+
+ which will AND the symbols together or
+
+   'symbol1 or symbol2 or ... or symboln'
+
+ which will OR the symbols together. Symbols may also be negated such as
+
+   'not symbol1 or symbol2'
+
+ When the condition is TRUE, the lines following the .WHEN line are either
+ inserted or deleted depending on the INSERT or DELETE following the condi-
+ tional expression. If the conditional-expression is FALSE, the opposite oper-
+ ation is performed, i.e. lines will be deleted if INSERT is specified and
+ lines will be inserted if DELETE is specified.
+
+
+ 2.4.1  Example
+
+ For example, the conditional compile
+
+   .config section1 on
+   .when 'PC' insert
+   This is processed on a PC.
+   .when 'HOST' insert
+   This is processed on the big iron.
+   .config section1 off
+
+ will produce 'This is processed on a PC.' when IPFCPREP is invoked like
+
+   ipfcprep in.scr out.ipf -D PC
+
+ and will produce 'This is processed on the big iron.' when IPFCPREP is
+ invoked like
+
+   ipfcprep in.scr out.ipf -D HOST
+
+
+
+***************************************************************************
+ 2.5  Using Simple Macros
+
+ Macros in the IPFCPREP is a simple way to substitute lines of text for a
+ single tag. This does not do any math or fancy macro stuff, just simple text
+ substitution.
+
+ Macros start with a '.dm macro-name on' tag and end with a '.dm off' tag. All
+ text between the those two lines is part of the macro.
+
+ The macro is invoked by specifying a colon (:), the macro name, any parame-
+ ters, and finally a period (.). The period at the end of the macro is
+ required.
+
+
+ 2.5.1  Example
+
+ For example, the macro
+
+   .dm testmac on
+   This macro prints out &text. when invoked
+   .dm off
+
+ will produce
+
+   This macro prints out garbage when invoked.
+
+ when it is called like
+
+   :testmac text=garbage.
+
+ It will also produce
+
+   This macro prints out tons of garbage when invoked.
+
+ when it is called like
+
+   :testmac text='tons of garbage'.
+
+ Another example, the macro
+
+   .dm user_resp on
+   :hp1.&resp.:ehp1.
+   .dm off
+
+ will produce
+
+   The user response is :hp1.Quit:ehp1..
+
+ when it is called like
+
+   The user response is :user_resp resp=Quit..
+
+
+
+***************************************************************************
+ 2.6  Using Simple Macros that can be used in BookMaster
+
+ To make these macros work under BookMaster, you must structure the macro
+ slightly different. You must
+
+ o   Add a '.gs attval parm_keyname_1 parm_keyname2 ...' line after the '.dm
+     macro_name' line so that the values are assigned in BookMaster.
+
+ o   Add a '.aa tag_name start_macro_name end_macro_name' after the '.dm off'
+     line so that you can reference the macros start_macro_name and
+     end_macro_name by :tag_name. & :etag_name.
+
+ o   Make sure all substitution variables on the tag line are used in upper-
+     case.
+
+
+ 2.6.1  Example
+
+ For example, the macro
+
+   .dm testmac on
+   .gs attval text
+   This macro prints out &TEXT. when invoked
+   .dm off
+   .aa test testmac
+
+ will produce
+
+   This macro prints out garbage when invoked.
+
+ when it is called like
+
+   :test text=garbage.
+
+ It will also produce
+
+   This macro prints out tons of garbage when invoked.
+
+ when it is called like
+
+   :test text='tons of garbage'.
+
+ Another example, the macro
+
+   .dm strtlist on
+   :ul.
+   .dm off
+
+   .dm endlist on
+   :eul.
+   .dm off
+
+   .aa list strtlist endlist
+
+   .dm listitem on
+   :li.
+   .dm off
+
+   .aa item listitem
+
+
+
+ will produce
+
+   :ul.
+   :li.Text
+   :eul.
+
+ when it is called like
+
+   :list.
+   :item.Text
+   :elist.
+
+***************************************************************************
+ 2.7  Using Positional Parameters on Macros
+
+ Positional parameters *, and *1 throught *n may be used in macros instead of
+ keyword parameters.
+
+
+ 2.7.1  Example
+
+ For example, the macro
+
+   .dm posmac on
+   All parms are :*..
+   This is the first parm = &*1..
+   This is the second parm = &*2..
+   This is the third parm = &*3..
+   This is the fourth parm = &*4..
+   . off
+
+ will produce
+
+   All parms are Mickey Mouse loves Minnie.
+   This is the first parm = Mickey.
+   This is the second parm = Mouse.
+   This is the third parm = loves.
+   This is the fourth parm = Minnie.
+
+ when it is called like
+
+   :posmac Mickey Mouse loves Minnie.
+
+ It will also produce
+
+   All parms are Mickey Mouse loves nobody.
+   This is the first parm = Mickey.
+   This is the second parm = Mouse.
+   This is the third parm = loves.
+   This is the fourth parm = nobody.
+
+ when it is called like
+
+   :posmac Mickey Mouse loves nobody.
+
+

@@ -1,0 +1,6 @@
+//VBBeginPartInfo: HelpHandler
+//VBParent: IHelpHandler
+//VBIncludes: helphdr.hpp _HELPHANDLER_
+//VBPartDataFile: 'helphdr.vbb'
+//VBComposerInfo: class,204,dde4vr30
+//VBEndPartInfo: HelpHandler

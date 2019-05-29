@@ -1,0 +1,12 @@
+
+
+// Feature source code generation begins here...
+const INotificationId  ContactUpdateView::refreshRequiredEventId = "ContactUpdateView::refreshRequiredEvent";
+
+int ContactUpdateView::refreshRequired()
+{
+  notifyObservers(INotificationEvent(ContactUpdateView::refreshRequiredEventId, *this));
+  return 0;
+}
+
+// Feature source code generation ends here.
